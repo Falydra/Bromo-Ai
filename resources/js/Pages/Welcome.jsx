@@ -12,7 +12,6 @@ export default function LandingPage() {
 
         if (!message.trim()) return;
 
-        // Add user message to chat
         setChat((prevChat) => [...prevChat, { role: 'user', text: message }]);
 
         try {
@@ -25,7 +24,7 @@ export default function LandingPage() {
             });
             const data = await res.json();
 
-            // Add bot response to chat
+           
             if (res.ok) {
                 setChat((prevChat) => [...prevChat, { role: 'bot', text: data.response }]);
             } else {
@@ -47,7 +46,7 @@ export default function LandingPage() {
                 <h3 className='text-white'>Halo para prompters kontol, lu kalo nanya tau diri ngentot</h3>
                 {showModal &&  (
                     <div className='flex flex-col items-center w-5/6 h-3/4 overflow-y-auto bg-transparent rounded-lg p-4 mt-4'>
-                    {/* Chat messages */}
+                    
                     {chat.map((msg, index) => (
                         <div
                             key={index}
