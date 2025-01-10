@@ -2,49 +2,83 @@
 
 namespace App\Services;
 
+use Illuminate\Support\Arr;
+use Illuminate\Support\Str;
+use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Http;
 
 class DOAJService {
     protected $baseUrl;
     protected $apiKey;
+    protected $outputPath;
 
     public function __construct() {
         $this->baseUrl = env('DOAJ_API_URL');
         $this->apiKey = env('DOAJ_API_KEY');
+        $this->outputPath = 'app/temp'; // for permanent storage, use 'storage/app/json'
     }
 
-    public function getArticle($id) {
-        $response = Http::get("{$this->baseUrl}/articles/{$id}");
+    public function extractData($data) {
+        $extractedData = [];
 
-        if ($response->successfull()) {
-            return $response->json();
+        foreach ($data['results'] as $article) {
+            $bibjson = $article['bibjson'] ?? [];
+            $doi = Arr::first($bibjson['identifier'], function ($identifier) {
+                return $identifier['type'] == 'doi';
+            }) ?? [];
+
+            if (!empty($doi)) {
+                $extractedData[] = [
+                    // 'identifiers' => $bibjson['identifier'] ?? [],
+                    'doi' => $doi['id'] ?? [],
+                    'links' => Arr::first(array_map(fn($link) => $link['url'] ?? '', $bibjson['link'] ?? [])),
+                    'abstract' => $bibjson['abstract'] ?? '',
+                    'title' => $bibjson['title'] ?? '',
+                    'authors' => array_map(fn($author) => $author['name'] ?? '', $bibjson['author'] ?? []),
+                    'year' => $bibjson['year'] ?? '',
+                ];
+            }
         }
 
-        return null;
+        // save to new json
+        $outputPath = storage_path("{$this->outputPath}/article_data.json");
+
+        // check temp directory and the json exists before writing new file
+        if (!File::exists(dirname($outputPath))) {
+            File::makeDirectory(dirname($outputPath), 0755, true);
+        }
+
+        File::put($outputPath, json_encode($extractedData, JSON_PRETTY_PRINT));
+
+        return response()->json([
+            'success' => 'true',
+            'message' => 'Data extracted successfully',
+            'file' => $outputPath,
+        ]);
     }
 
-    public function searchArticle($search_query) {
-        $response = Http::get("{$this->baseUrl}/search/articles/{$search_query}");
+    public function searchArticle($search_query, $pageSize=20) {
+        $keywords = Str::of($search_query)->explode(" ");
+        $query = '(' . $keywords->map(fn($word) => "bibjson.abstract:\"$word\"")->join(' AND ') . ')';
+        $query = "{$query} AND bibjson.link.url:\".pdf\"";
+
+        $response = Http::get(
+            "{$this->baseUrl}/search/articles/{$search_query}",
+            ["pageSize" => $pageSize]
+        );
 
         if ($response->successful()) {
-            return $response->json();
+            return $this->extractData($response->json());
         }
 
         return null;
     }
 
-    public function getJournal($id) {
-        $response = Http::get("{$this->baseUrl}/journals/{$id}");
-
-        if ($response->successful()) {
-            return $response->json();
-        }
-
-        return null;
-    }
-
-    public function searchJournal($search_query) {
-        $response = Http::get("{$this->baseUrl}/search/journals/{$search_query}");
+    public function searchJournal($search_query, $pageSize=5) {
+        $response = Http::get(
+            "{$this->baseUrl}/search/journals/{$search_query}",
+            ["pageSize" => $pageSize],
+        );
 
         if ($response->successful()) {
             return $response->json();

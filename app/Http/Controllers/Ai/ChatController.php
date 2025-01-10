@@ -4,19 +4,24 @@
 namespace App\Http\Controllers\Ai;
 
 use Illuminate\Http\Request;
+use App\Services\DOAJService;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Http;
 use Symfony\Component\Process\Process;
 
-class ChatController extends Controller
-{
-    public function askQuestion(Request $request)
-    {
+class ChatController extends Controller {
+    public function askQuestion(Request $request) {
         // Validate the incoming request
         $request->validate([
             'question' => 'required|string',
         ]);
 
         $question = $request->input('question');
+
+        // fetch article data
+        $response = Http::get(route('article.search', ['query' => $question]));
+
+        return $response->json();
 
         // Define the process to run the Python script
         $process = new Process(['python', base_path('scripts/model.py'), $question]);

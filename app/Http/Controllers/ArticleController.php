@@ -12,23 +12,17 @@ class ArticleController extends Controller {
         $this->doajService = $doajService;
     }
 
-    public function show($id) {
-        $article = $this->doajService->getArticle($id);
+    public function searchArticle(Request $request) {
+        $query = $request->input('query');
 
-        if ($article) {
-            return response()->json($article);
-        }
-
-        return response()->json(['error' => 'articles not found'], 404);
-    }
-
-    public function search($search_query) {
-        $articles = $this->doajService->searchArticle($search_query);
+        $articles = $this->doajService->searchArticle($query);
 
         if ($articles) {
             return response()->json($articles);
         }
 
-        return response()->json(['message' => 'no articles found']);
+        return response()->json([
+            'error' => 'articles not found',
+        ], 404);
     }
 }
