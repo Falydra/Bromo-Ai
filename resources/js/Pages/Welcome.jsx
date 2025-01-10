@@ -16,10 +16,15 @@ export default function LandingPage() {
         setChat((prevChat) => [...prevChat, { role: 'user', text: message }]);
 
         try {
-            const res = await fetch('http://localhost:8000/chat', {
+            const csrfToken = document.head.querySelector('meta[name="csrf-token"]')?.content;
+            const appUrl = import.meta.env.VITE_APP_URL;
+            const url = `${appUrl}/chat`;
+            console.log(url);
+            const res = await fetch(url, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
+                    'X-CSRF-TOKEN': csrfToken,
                 },
                 body: JSON.stringify({ question: message }),
             });
@@ -84,7 +89,7 @@ export default function LandingPage() {
                     ))}
                 </div>
                 )}
-                
+
                 <form onSubmit={handleSubmit} className='flex flex-col items-center w-5/6 mt-4'>
                     <div className='relative w-3/6'>
                         <input
