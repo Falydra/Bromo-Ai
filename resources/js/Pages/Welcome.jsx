@@ -1,3 +1,4 @@
+import { Link } from '@inertiajs/react';
 import React, { useState } from 'react';
 import { IoMdSend } from "react-icons/io";
 
@@ -40,6 +41,24 @@ export default function LandingPage() {
     return (
         <div className='flex w-full h-screen justify-center items-center flex-row bg-slate-800'>
             <div className='flex flex-col w-2/12 h-full justify-center items-center border-r rounded-3xl border-white'>
+                <div className='flex flex-col w-full h-full items-center justify-start py-8'>
+                    <h1 className='text-white font-semibold text-2xl'>Bromo Ai</h1>
+                    <div className='flex flex-row w-full items-start justify-start px-8 py-12'>
+
+                        <h3 className='text-white'>History</h3>
+                    </div>
+                </div>
+                <div className='flex flex-col w-full h-full items-center justify-end text-white py-8'>
+                    <Link href={route("login")} className='w-9/12 h-12 items-center justify-center flex'>
+                        <button className='w-8/12 h-12 bg-blue-500 rounded-lg' >
+
+                            <h1>
+                                Login
+                            </h1>
+                        </button>
+
+                    </Link>
+                </div>
             </div>
             <div className='flex flex-col w-10/12 h-full justify-center items-center'>
                 <h1 className='text-white font-semibold text-5xl'>Bromo Ai</h1>
