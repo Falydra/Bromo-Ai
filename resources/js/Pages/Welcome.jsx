@@ -69,7 +69,7 @@ export default function LandingPage() {
                 <h1 className='text-white font-semibold text-5xl'>Bromo Ai</h1>
                 <h3 className='text-white'>Halo para prompters kontol, lu kalo nanya tau diri ngentot</h3>
                 {showModal &&  (
-                    <div className='flex flex-col items-center w-5/6 h-3/4 overflow-y-auto bg-transparent rounded-lg p-4 mt-4'>
+                    <div className='flex flex-col items-center w-5/6 h-3/4 overflow-y-auto scrollbar-hidden bg-transparent rounded-lg p-4 mt-4'>
                     
                     {chat.map((msg, index) => (
                         <div
