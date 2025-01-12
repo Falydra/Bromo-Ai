@@ -5,6 +5,8 @@ import ResponsiveNavLink from '@/Components/ResponsiveNavLink';
 import { Link, usePage } from '@inertiajs/react';
 import { useState } from 'react';
 import Navbar from '@/Components/Navbar';
+import Hero from '@/Components/Hero';
+import BromoAi from '@/Components/BromoAi';
 
 export default function AuthenticatedLayout({ header, children }) {
     const user = usePage().props.auth.user;
@@ -15,6 +17,8 @@ export default function AuthenticatedLayout({ header, children }) {
     return (
         <div className="min-h-screen bg-white text-black">
             <Navbar />
+            <Hero/>
+            <BromoAi/>
             
         </div>
     );
