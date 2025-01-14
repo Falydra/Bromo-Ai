@@ -3,6 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\Ai\ChatController;
 use App\Http\Controllers\ArticleController;
+use App\Http\Controllers\PDFController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -22,7 +23,8 @@ Route::get('/dashboard', function () {
 
 Route::post('/chat', [ChatController::class, 'askQuestion'])->name('bromo.chat');
 
-Route::get('/search/articles', [ArticleController::class, 'searchArticle'])->name('article.search');
+Route::get('/articles/search', [ArticleController::class, 'searchArticle'])->name('article.search');
+Route::get('/articles/download', [ArticleController::class, 'downloadArticle'])->name('article.download');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

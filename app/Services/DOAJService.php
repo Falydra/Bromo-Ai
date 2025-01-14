@@ -15,7 +15,8 @@ class DOAJService {
     public function __construct() {
         $this->baseUrl = env('DOAJ_API_URL');
         $this->apiKey = env('DOAJ_API_KEY');
-        $this->outputPath = 'app/temp'; // for permanent storage, use 'storage/app/json'
+        // $this->outputPath = 'app/temp'; // for permanent storage, use 'app/json'
+        $this->outputPath = 'scripts';
     }
 
     public function extractData($data) {
@@ -41,9 +42,10 @@ class DOAJService {
         }
 
         // save to new json
-        $outputPath = storage_path("{$this->outputPath}/article_data.json");
+        // $outputPath = storage_path("{$this->outputPath}/article_data.json");
+        $outputPath = base_path("{$this->outputPath}/article_data.json");
 
-        // check temp directory and the json exists before writing new file
+        // check directory and the json exists before writing new file
         if (!File::exists(dirname($outputPath))) {
             File::makeDirectory(dirname($outputPath), 0755, true);
         }
@@ -57,14 +59,15 @@ class DOAJService {
         ]);
     }
 
-    public function searchArticle($search_query, $pageSize=20) {
-        $keywords = Str::of($search_query)->explode(" ");
-        $query = '(' . $keywords->map(fn($word) => "bibjson.abstract:\"$word\"")->join(' AND ') . ')';
+    public function searchArticle($search_query, $pageSize=50, $page=1) {
+        $keywords = Str::of($search_query)->explode("; ");
+        $query = '(' . $keywords->map(fn($word) => "bibjson.\*:\"$word\"")->join(' OR ') . ')';
         $query = "{$query} AND bibjson.link.url:\".pdf\"";
+        // $query = "{$query} AND bibjson.link.url:\"ejournal.undip.ac.id\"";
 
         $response = Http::get(
-            "{$this->baseUrl}/search/articles/{$search_query}",
-            ["pageSize" => $pageSize]
+            "{$this->baseUrl}/search/articles/{$query}",
+            ["pageSize" => $pageSize, "page" => $page]
         );
 
         if ($response->successful()) {

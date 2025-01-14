@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { IoMdSend } from "react-icons/io";
+import { Link } from '@inertiajs/react';
 
 export default function LandingPage() {
     const [message, setMessage] = useState('');
@@ -34,7 +35,7 @@ export default function LandingPage() {
             if (res.ok) {
                 setChat((prevChat) => [...prevChat, { role: 'bot', text: data.response }]);
             } else {
-                setChat((prevChat) => [...prevChat, { role: 'bot', text: 'Something went wrong.' }]);
+                setChat((prevChat) => [...prevChat, { role: 'bot', text: 'Something went wrong' }]);
             }
         } catch (error) {
             setChat((prevChat) => [...prevChat, { role: 'bot', text: 'Error connecting to the server.' }]);
@@ -46,10 +47,28 @@ export default function LandingPage() {
     return (
         <div className='flex w-full h-screen justify-center items-center flex-row bg-slate-800'>
             <div className='flex flex-col w-2/12 h-full justify-center items-center border-r rounded-3xl border-white'>
+                <div className='flex flex-col w-full h-full items-center justify-start py-8'>
+                    <h1 className='text-white font-semibold text-2xl'>Reference AI</h1>
+                    <div className='flex flex-row w-full items-start justify-start px-8 py-12'>
+
+                        <h3 className='text-white'>History</h3>
+                    </div>
+                </div>
+                <div className='flex flex-col w-full h-full items-center justify-end text-white py-8'>
+                    <Link href={route("login")} className='w-9/12 h-12 items-center justify-center flex'>
+                        <button className='w-8/12 h-12 bg-blue-500 rounded-lg' >
+
+                            <h1>
+                                Login
+                            </h1>
+                        </button>
+
+                    </Link>
+                </div>
             </div>
             <div className='flex flex-col w-10/12 h-full justify-center items-center'>
-                <h1 className='text-white font-semibold text-5xl'>Bromo Ai</h1>
-                <h3 className='text-white'>Halo para prompters kontol, lu kalo nanya tau diri ngentot</h3>
+                <h1 className='text-white font-semibold text-5xl'>Reference AI</h1>
+                <h3 className='text-white'>Selamat datang para prompters. Harap bertanya dengan sopan dan santun.</h3>
                 {showModal &&  (
                     <div className='flex flex-col items-center w-5/6 h-3/4 overflow-y-auto bg-transparent rounded-lg p-4 mt-4'>
                     {/* Chat messages */}
