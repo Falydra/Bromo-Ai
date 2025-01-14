@@ -71,9 +71,14 @@ export default function LandingPage() {
                 <h1 className='text-white font-semibold text-5xl'>Reference AI</h1>
                 <h3 className='text-white'>Selamat datang para prompters. Harap bertanya dengan sopan dan santun.</h3>
                 {showModal &&  (
+
                     <div className='flex flex-col items-center w-5/6 h-3/4 overflow-y-auto bg-transparent rounded-lg p-4 mt-4'>
                     {/* Chat messages */}
-                    {chat.map((msg, index) => (
+
+                    
+                    
+
+                   {chat.map((msg, index) => (
                         <div
                             key={index}
                             className={`w-full mb-4 flex ${
