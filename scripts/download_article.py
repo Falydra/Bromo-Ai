@@ -3,10 +3,10 @@ from langchain.docstore.document import Document
 import chromadb
 from chromadb.utils import embedding_functions
 import requests
-import subprocess
 import json
 import re
 import os
+import shutil
 
 def sanitize_filename(filename: str):
     title = re.sub(r'[^\w\s-]', '', filename)  # remove special characters
@@ -26,7 +26,7 @@ def download_pdf(data: list[dict], foldername: str):
     # download pdf
     for i, article in enumerate(data):
         title = sanitize_filename(article["title"])
-        filename = f"{folder}/{title}.pdf"
+        filename = os.path.abspath(f"./../scripts/{folder}/{title}.pdf")
         url = article["links"]
         try:
             # send download request
@@ -51,7 +51,7 @@ def generate_chunk_list(data: list[dict], title_collection: chromadb.Collection)
         status = "OK"
         try:
             title = sanitize_filename(article["title"])
-            path = f"articles/{title}.pdf"
+            path = os.path.abspath(f"./../scripts/articles/{title}.pdf")
             id = sanitize_doi(article["doi"])
             reader_object = PdfReader(path)
             for j in range(len(reader_object.pages)):
@@ -83,6 +83,20 @@ def saveToDB(chunk_list: list[dict], document_collection: chromadb.Collection):
             ids=[f"id{i}"]
     )
 
+def delete_article():
+    path = os.path.abspath("./../scripts/articles")
+
+    if os.path.exists(path) and os.path.isdir(path):
+        for filename in os.listdir(path):
+            file_path = os.path.join(path, filename)
+            try:
+                if os.path.isdir(file_path):
+                    shutil.rmtree(file_path) # delete the directory
+                else:
+                    os.remove(file_path)
+            except Exception as e:
+                print(f"Error deleting {file_path}: {e}")
+
 if __name__ == "__main__":
     # create or get database
     import vector_database
@@ -90,7 +104,7 @@ if __name__ == "__main__":
     document_collection = vector_database.document_collection
 
     # create articles folder
-    folder = "articles"
+    folder = os.path.abspath("./../scripts/articles")
     os.makedirs(folder, exist_ok=True)
     json_path = os.path.abspath('./../scripts/article_data.json')
 
@@ -108,4 +122,5 @@ if __name__ == "__main__":
     chunk_list_pagewise = generate_chunk_list(downloaded_article, title_collection)
     saveToDB(chunk_list_pagewise, document_collection)
     print("Articles successfully downloaded")
+    delete_article()
 

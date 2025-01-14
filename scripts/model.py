@@ -5,6 +5,7 @@ from chromadb.utils import embedding_functions
 from openai import OpenAI
 import json
 import sys
+import io
 
 def retrieveArticleID(question: str, title_collection: chromadb.Collection):
   result = title_collection.query(
@@ -97,13 +98,16 @@ def createPrompt(query: str, context: str, prompt_template: str, format: str, co
     return prompt_template.format(question=query, context=context, format=format, constraints = constraints)
 
 if __name__ == "__main__":
+    import time
+
+    start_time = time.time()
     # setup client
     import vector_database
     title_collection = vector_database.title_collection
     document_collection = vector_database.document_collection
 
     # model_client
-    model_client = OpenAI(api_key="", base_url="https://api.deepseek.com")
+    model_client = OpenAI(api_key="sk-64149cffb9534973ba492c2d9a9e1dda", base_url="https://api.deepseek.com")
 
     # prompt template
     prompt_template = """
@@ -162,6 +166,8 @@ if __name__ == "__main__":
         ],
         stream=False
     )
-    print(response.choices[0].message.content)
 
-    print(f"execution time: {query}")
+    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
+    print(response.choices[0].message.content.encode('utf-8').decode('utf-8'))
+
+    print(f"execution time: {time.time() - start_time}")

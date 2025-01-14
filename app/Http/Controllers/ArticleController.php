@@ -16,6 +16,7 @@ class ArticleController extends Controller {
     }
 
     public function searchArticle(Request $request) {
+        set_time_limit(900);
         $query = $request->input('query');
 
         $articles = $this->doajService->searchArticle($query);
@@ -30,6 +31,7 @@ class ArticleController extends Controller {
     }
 
     public function downloadArticle(Request $request) {
+        set_time_limit(300);
         $scriptPath = base_path('scripts/download_article.py');
         $process = new Process([$this->pythonPath, $scriptPath]);
         $process->run();

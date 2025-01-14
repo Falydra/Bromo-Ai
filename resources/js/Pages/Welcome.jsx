@@ -35,7 +35,8 @@ export default function LandingPage() {
             if (res.ok) {
                 setChat((prevChat) => [...prevChat, { role: 'bot', text: data.response }]);
             } else {
-                setChat((prevChat) => [...prevChat, { role: 'bot', text: 'Something went wrong' }]);
+                // setChat((prevChat) => [...prevChat, { role: 'bot', text: 'Something went wrong' }]);
+                setChat((prevChat) => [...prevChat, { role: 'bot', text: data.error }]);
             }
         } catch (error) {
             setChat((prevChat) => [...prevChat, { role: 'bot', text: 'Error connecting to the server.' }]);
