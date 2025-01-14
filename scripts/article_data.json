@@ -1,0 +1,640 @@
+[
+    {
+        "doi": "10.21608\/jesaun.2024.326709.1374",
+        "links": "https:\/\/jesaun.journals.ekb.eg\/article_393447_9546e355affffebb2c5da930aaeba9a0.pdf",
+        "abstract": "Agriculture is a vital component of Egypt's economy; therefore, using Digital Elevation Models (DEMs) in agricultural planning in Egypt has significant benefits regarding water management, site appropriateness assessment, flood risk mitigation, and infrastructure construction. It is also essential for planners to make more informed decisions, optimize resource allocation, and support sustainable farming practices. This research paper investigates the accuracy of obtaining DEM data from four free global models (STRM30, ALOS30, COP30, and TanDEM-X90). The global DEM data has been compared to an actual GNSS-RTK DEM data surveyed onsite for two agricultural block areas in Aswan, the southern Government of Egypt. The two blocks are a part of a national project. For Block I and II, the RMSE of the Model STRM30 was 2.92 m and 3.59 m, respectively, indicating a poorer solution. Regarding accuracy, the ALOS30 model ranks third, reporting an RMSE of 2.58 m for block II and 3.30 m for block I. COP30 has an RMSE value of 1.06 m for blocks I and II and.91 m overall. TanDEM-X90 is the most accurate model in this investigation; block I provided an RMSE of 0.90 m with an SD of 0.58 m (SD95% = 0.38 m). After removing the anomalies, the model's stated RMSE for block II was 0.34 m, with an SD value of 0.62 m and 1.03 m. According to the classification using machine learning algorithms, with an accuracy of 84.7% for block I and 85% for block II, TanDEM-X90 is the best solution.",
+        "title": "Evaluation of the Applications of using Global free Digital Elevation Models and GNSS-RTK data for Agricultural purposes in Egypt using Machine Learning",
+        "authors": [
+            "Ashraf abdallah",
+            "Bara&#039; Al-MISTAREHI",
+            "Amir SHTAYAT"
+        ],
+        "year": "2025"
+    },
+    {
+        "doi": "10.1051\/shsconf\/202214001016",
+        "links": "https:\/\/www.shs-conferences.org\/articles\/shsconf\/pdf\/2022\/10\/shsconf_iteme2022_01016.pdf",
+        "abstract": "Starting from the background of the outbreak of New Coronavirus, in order to realize the function of automatically identifying the required items by machine, the support vector machine algorithm in the neural network and the traditional computer vision algorithm opencv were used. The software developed by pycharm and python programming language was used to compile automatically a software to identify whether the required items were filled out. And on the basis of completing the software, it is connected to the embedded device high-speed clapper. It is applied to Fuzhou Customs to help the customs staff review the health form and declaration card of inbound and outbound passengers, which not only saves the time of staff and passengers, but also contributes to the prevention and control of epidemic situation to a certain extent.",
+        "title": "Research on recognizing required items based on opencv and machine learning",
+        "authors": [
+            "Ma Qingyun",
+            "Huang Xubin"
+        ],
+        "year": "2022"
+    },
+    {
+        "doi": "10.5194\/os-18-1491-2022",
+        "links": "https:\/\/os.copernicus.org\/articles\/18\/1491\/2022\/os-18-1491-2022.pdf",
+        "abstract": "<p>The eastern Mediterranean surface circulation is highly energetic and composed of structures interacting stochastically. However, some main features are still debated, and the behavior of some fine-scale dynamics and their role in shaping the general circulation is yet unknown. In the following paper, we use an unsupervised neural network clustering method to analyze the long-term variability of the different mesoscale structures. We decompose 26 years of altimetric data into clusters reflecting different circulation patterns of weak and strong flows with either strain or vortex-dominated velocities. The vortex-dominated cluster is more persistent in the western part of the basin, which is more active than the eastern part due to the strong flow along the coast, interacting with the extended bathymetry and engendering continuous instabilities. The cluster that reflects a weak flow dominated the middle of the basin, including the Mid-Mediterranean Jet (MMJ) pathway. However, the temporal analysis shows a frequent and intermittent occurrence of a strong flow in the middle of the basin, which could explain the previous contradictory assessment of MMJ existence using in-situ observations. Moreover, we prove that the Levantine Sea is becoming more and more energetic as the activity of the main mesoscale features is showing a positive trend.<\/p>",
+        "title": "Surface circulation properties in the eastern Mediterranean emphasized using machine learning methods",
+        "authors": [
+            "G. Baaklini",
+            "G. Baaklini",
+            "R. El Hourany",
+            "M. Fakhri",
+            "J. Brajard",
+            "L. Issa",
+            "G. Fifani",
+            "G. Fifani",
+            "L. Mortier"
+        ],
+        "year": "2022"
+    },
+    {
+        "doi": "10.4204\/EPTCS.306.16",
+        "links": "http:\/\/arxiv.org\/pdf\/1909.08235v1",
+        "abstract": "In this work we design a narrative understanding tool Text2ALM. This tool uses an action language ALM to perform inferences on complex interactions of events described in narratives. The methodology used to implement the Text2ALM system was originally outlined by Lierler, Inclezan, and Gelfond (2017) via a manual process of converting a narrative to an ALM model. It relies on a conglomeration of resources and techniques from two distinct fields of artificial intelligence, namely, natural language processing and knowledge representation and reasoning. The effectiveness of system Text2ALM is measured by its ability to correctly answer questions from the bAbI tasks published by Facebook Research in 2015. This tool matched or exceeded the performance of state-of-the-art machine learning methods in six of the seven tested tasks. We also illustrate that the Text2ALM approach generalizes to a broader spectrum of narratives.",
+        "title": "Information Extraction Tool Text2ALM: From Narratives to Action Language System Descriptions",
+        "authors": [
+            "Craig Olson",
+            "Yuliya Lierler"
+        ],
+        "year": "2019"
+    },
+    {
+        "doi": "10.1590\/0370-44672023770071",
+        "links": "http:\/\/www.scielo.br\/scielo.php?script=sci_arttext&pid=S2448-167X2024000201404&lng=en&tlng=en",
+        "abstract": "Abstract The modeling of mineral deposits has been improved over the years with the incorporation of mineralogical and metallurgical information obtained from drilling samples that make up the pillars for the construction of resource models. However, sampling data is being made available in large quantities, causing current databases to grow exponentially. The use of machine learning (ML) algorithms has been applied to deal with multidimensional data problems. Principal component analysis (PCA) is a multivariate analysis (MA) technique whose aim is to reduce the dimension of multivariate data. Studies show that results obtained with the reduction of variables were satisfactory in different areas of activity. The purpose of this article is to test variable selection criteria using PCA for geometallurgical data and to check the feasibility of the technique for simplifying variable types and defining typological domains.",
+        "title": "Evaluation of PCA with variable selection for cluster typological domains",
+        "authors": [
+            "Silv\u00e2nia Alves Braga de Castro",
+            "Andr\u00e9 Carlos Silva"
+        ],
+        "year": "2024"
+    },
+    {
+        "doi": "https:\/\/doi.org\/10.46222\/ajhtl.19770720.256",
+        "links": "https:\/\/www.ajhtl.com\/uploads\/7\/1\/6\/3\/7163688\/article_16_11_2_770-780.pdf",
+        "abstract": "The purpose of the current study was to determine factors affecting tourism demand using machine learning techniques. The results of different linear regression and random forest models on both the train and test sets were compared using RMSE and R2\r\n. The random forest model outperformed the linear regression model on both the\r\ntraining and test sets. Climate, consumer price index, political stability, distance, promotion expenditure, and region of residence are all important factors in explaining total arrivals. The findings of the current research, therefore, provide additional evidence for the effectiveness of the AI based models to improve tourism demand forecasting compared to linear regression models.\r\n",
+        "title": "Determinants of Tourism Demand Using Machine Learning Techniques",
+        "authors": [
+            "Musonera Abdou",
+            "Edouard Musabanganji ",
+            "Herman Musahara"
+        ],
+        "year": "2022"
+    },
+    {
+        "doi": "10.7717\/peerj-cs.1677",
+        "links": "https:\/\/peerj.com\/articles\/cs-1677.pdf",
+        "abstract": "Dependence on the internet and computer programs demonstrates the significance of computer programs in our day-to-day lives. Such demands motivate malware developers to create more malware, both in terms of quantity and variety. Researchers are constantly faced with hurdles while attempting to protect themselves from potential hazards and risks due to malware authors\u2019 usage of code obfuscation techniques. Metamorphic and polymorphic variations are easily able to elude the widely utilized signature-based detection procedures. Researchers are more interested in deep learning approaches than machine learning techniques to analyze the behavior of such a vast number of virus variants. Researchers have been drawn to the categorization of malware within itself in addition to the classification of malware against benign programs to examine the behavioral differences between them. In order to investigate the relationship between the application programming interface (API) calls throughout API sequences and classify them, this work uses the one-dimensional convolutional neural network (1D-CNN) model to solve a multiclass classification problem. On API sequences, feature vectors for distinctive APIs are created using the Word2Vec word embedding approach and the skip-gram model. The one-vs.-rest approach is used to train 1D-CNN models to categorize malware, and all of them are then combined with a suggested ModifiedSoftVoting algorithm to improve classification. On the open benchmark dataset Mal-API-2019, the suggested ensembled 1D-CNN architecture captures improved evaluation scores with an accuracy of 0.90, a weighted average F1-score of 0.90, and an AUC score of more than 0.96 for all classes of malware.",
+        "title": "An ensemble approach for imbalanced multiclass malware classification using 1D-CNN",
+        "authors": [
+            "Binayak Panda",
+            "Sudhanshu Shekhar Bisoyi",
+            "Sidhanta Panigrahy"
+        ],
+        "year": "2023"
+    },
+    {
+        "doi": "10.5194\/isprs-archives-XLIII-B2-2022-485-2022",
+        "links": "https:\/\/www.int-arch-photogramm-remote-sens-spatial-inf-sci.net\/XLIII-B2-2022\/485\/2022\/isprs-archives-XLIII-B2-2022-485-2022.pdf",
+        "abstract": "The use of deep machine learning methods for semantic classification of city mesh models is one of the current trends in geoscience development. Thanks to the thriving development of Convolutional Neural Networks (CNNs) it is now achievable to conduct fully automated process of building aforementioned 3D model by means of photogrammetric techniques and supplement it with additional semantic information obtained by Artificial Intelligence (AI) algorithms. In order to guarantee the comprehensiveness of said information it is essential to use an extensive range of 3D data including oblique aerial imagery and aerial laser scanning (ALS). Such comprehensive 3D mesh models may be later implemented in many Digital Twin class solutions additionally supported with modern GIS systems and its algorithms. To proof the validity of this thesis, the article showcases results of research conducted using deep learning based solutions tested on two datasets - real-world data in the form of oblique aerial images and ALS point clouds acquired in Bordeaux, France using novel Leica CityMapper-1 multisensoral system and large-scale dataset from SUM: A Benchmark Dataset of Semantic Urban Meshes. Both subalgorithms make use of CNNs as its core-feature. To perform accurate classification of oblique aerial scenes PSP-Net architecture accelerated by techniques of transfer learning has been used. Second algorithm destined for ALS point clouds utilizes CNN as well, but in this case implementation is based on proprietary architecture. The results of the experiments demonstrate that the utilizing these two mutually complementary solutions to extract new semantic information for city mesh models in proposed manner compared with the state-of-the-art methods achieves competitive classification performance.",
+        "title": "SEMANTIC URBAN MESH SEGMENTATION BASED ON AERIAL OBLIQUE IMAGES AND POINT CLOUDS USING DEEP LEARNING",
+        "authors": [
+            "\u0141. Wilk",
+            "\u0141. Wilk",
+            "D. Mielczarek",
+            "W. Ostrowski",
+            "W. Dominik",
+            "J. Krawczyk"
+        ],
+        "year": "2022"
+    },
+    {
+        "doi": "10.22105\/riej.2020.228212.1131",
+        "links": "http:\/\/www.riejournal.com\/article_107191_87ccc2576ef91a103e373a5fae2fae18.pdf",
+        "abstract": "Nowadays, the control of the traffic in the urban roads and in the highway has been a big challenge as the number of increase in the auto mobiles. So to overcome this problem we use the detection and tracking the vehicles using the traffic surveillance system. We can manage and control the traffic more easily. It is very complicated and a challenging task to identify the vehicle or a moving object in a complex environment with various background. The ratio detected of such algorithms depends on the quality of the foreground mask generated. Therefore this project is to present the detection and tracking the vehicles and the pedestrians in an efficient method which focus on trajectory motion of the vehicles and the pedestrians. In this proposed method, the pixels in the background are preserved which can be cars, bikes, buses, pedestrian, etc., the rest is discarded as the noise. Hence, our proposed method detects the vehicles and the pedestrians as mentioned and discards the rest noise as well in the same time. Here the quality of the generated foreground mask is more to increase the detection ratio. The performance is compared with other standard methods qualitatively and quantitatively.",
+        "title": "Detection of pedestrian and different types of vehicles using image processing",
+        "authors": [
+            "H. Herunde",
+            "A. Singh",
+            "H. Deshpande",
+            "P. Shetty"
+        ],
+        "year": "2020"
+    },
+    {
+        "doi": "10.5194\/isprs-archives-XLIII-B2-2020-659-2020",
+        "links": "https:\/\/www.int-arch-photogramm-remote-sens-spatial-inf-sci.net\/XLIII-B2-2020\/659\/2020\/isprs-archives-XLIII-B2-2020-659-2020.pdf",
+        "abstract": "The management of riverine areas is fundamental due to their great environmental importance. The fast changes that occur in these areas due to river mechanics and human pressure makes it necessary to obtain data with high temporal and spatial resolution. This study proposes a workflow to map riverine species using Unmanned Aerial Vehicle (UAV) imagery. Based on RGB point clouds, our work derived simple geometric and spectral metrics to classify an area of the public hydraulic domain of the river Palancia (Spain) in five different classes: <i>Tamarix gallica<\/i> L. (French tamarisk), <i>Pinus halepensis<\/i> Miller (Aleppo pine), <i>Arundo donax<\/i> L. (giant reed), other riverine species and ground. A total of six Machine Learning (ML) methods were evaluated: Decision Trees, Extra Trees, Multilayer Perceptron, K-Nearest Neighbors, Random Forest and Ridge. The method chosen to carry out the classification was Random Forest, which obtained a mean score cross-validation close to 0.8. Subsequently, an object-based reclassification was done to improve this result, obtaining an overall accuracy of 83.6%, and individually a producer\u2019s accuracy of 73.8% for giant reed, 87.7% for Aleppo pine, 82.8% for French tamarisk, 93.5% for ground and 80.1% for other riverine species. Results were promising, proving the feasibility of using this cost-effective method for periodic monitoring of riverine species. In addition, the proposed workflow is easily transferable to other tasks beyond riverine species classification (e.g., green areas detection, land cover classification) opening new opportunities in the use of UAVs equipped with consumer cameras for environmental applications.",
+        "title": "CLASSIFICATION OF UAV-BASED PHOTOGRAMMETRIC POINT CLOUDS OF RIVERINE SPECIES USING MACHINE LEARNING ALGORITHMS: A CASE STUDY IN THE PALANCIA RIVER, SPAIN",
+        "authors": [
+            "J. P. Carbonell-Rivera",
+            "J. Estornell",
+            "L. A. Ruiz",
+            "J. Torralba",
+            "P. Crespo-Peremarch"
+        ],
+        "year": "2020"
+    },
+    {
+        "doi": "10.1371\/journal.pone.0200455",
+        "links": "http:\/\/europepmc.org\/articles\/PMC6053154?pdf=render",
+        "abstract": "We propose a protocol to perform quantum reinforcement learning with quantum technologies. At variance with recent results on quantum reinforcement learning with superconducting circuits, in our current protocol coherent feedback during the learning process is not required, enabling its implementation in a wide variety of quantum systems. We consider diverse possible scenarios for an agent, an environment, and a register that connects them, involving multiqubit and multilevel systems, as well as open-system dynamics. We finally propose possible implementations of this protocol in trapped ions and superconducting circuits. The field of quantum reinforcement learning with quantum technologies will enable enhanced quantum control, as well as more efficient machine learning calculations.",
+        "title": "Multiqubit and multilevel quantum reinforcement learning with quantum technologies.",
+        "authors": [
+            "F A C\u00e1rdenas-L\u00f3pez",
+            "L Lamata",
+            "J C Retamal",
+            "E Solano"
+        ],
+        "year": "2018"
+    },
+    {
+        "doi": "10.1371\/journal.pone.0184109",
+        "links": "http:\/\/europepmc.org\/articles\/PMC5589169?pdf=render",
+        "abstract": "Glycosylation, oxidation and other post-translational modifications of membrane and transmembrane proteins can alter lipid density, packing and interactions, and are considered an important factor that affects fluidity variation in membranes. Red blood cells (RBC) membrane physical state, showing pronounced alterations in Type 1 diabetes mellitus (T1DM), could be the ideal candidate for monitoring the disease progression and the effects of therapies. On these grounds, the measurement of RBC membrane fluidity alterations can furnish a more sensitive index in T1DM diagnosis and disease progression than Glycosylated hemoglobin (HbA1c), which reflects only the information related to glycosylation processes. Here, through a functional two-photon microscopy approach we retrieved fluidity maps at submicrometric scale in RBC of T1DM patients with and without complications, detecting an altered membrane equilibrium. We found that a phase separation between fluid and rigid domains occurs, triggered by systemic effects on membranes fluidity of glycation and oxidation. The phase separation patterns are different among healthy, T1DM and T1DM with complications patients. Blood cholesterol and LDL content are positively correlated with the extent of the phase separation patterns. To quantify this extent a machine learning approach is employed to develop a Decision-Support-System (DSS) able to recognize different fluidity patterns in RBC. Preliminary analysis shows significant differences(p<0.001) among healthy, T1DM and T1DM with complications patients. The development of an assay based on Phase separation of the plasma membrane of the Red Blood cells is a potential tool for diagnosis and progression monitoring of type 1 diabetes mellitus, and could allow customization and the selection of medical treatments in T1DM in clinical settings, and enable the early detection of complications.",
+        "title": "Phase separation of the plasma membrane in human red blood cells as a potential tool for diagnosis and progression monitoring of type 1 diabetes mellitus.",
+        "authors": [
+            "Giuseppe Maulucci",
+            "Ermanno Cordelli",
+            "Alessandro Rizzi",
+            "Francesca De Leva",
+            "Massimiliano Papi",
+            "Gabriele Ciasca",
+            "Daniela Samengo",
+            "Giovambattista Pani",
+            "Dario Pitocco",
+            "Paolo Soda",
+            "Giovanni Ghirlanda",
+            "Giulio Iannello",
+            "Marco De Spirito"
+        ],
+        "year": "2017"
+    },
+    {
+        "doi": "10.5194\/acp-22-10551-2022",
+        "links": "https:\/\/acp.copernicus.org\/articles\/22\/10551\/2022\/acp-22-10551-2022.pdf",
+        "abstract": "<p>Evaluating the influence of anthropogenic-emission changes on air quality requires accounting for the influence of meteorological variability. Statistical methods such as multiple linear regression (MLR) models with basic meteorological variables are often used to remove meteorological variability and estimate trends in measured pollutant concentrations attributable to emission changes. However, the ability of these widely used statistical approaches to correct for meteorological variability remains unknown, limiting their usefulness in the real-world policy evaluations. Here, we quantify the performance of MLR and other quantitative methods using simulations from a chemical transport model, GEOS-Chem, as a synthetic dataset. Focusing on the impacts of anthropogenic-emission changes in the US (2011 to 2017) and China (2013 to 2017) on PM<span class=\"inline-formula\"><sub>2.5<\/sub><\/span> and <span class=\"inline-formula\">O<sub>3<\/sub><\/span>, we show that widely used regression methods do not perform well in correcting for meteorological variability and identifying long-term trends in ambient pollution related to changes in emissions. The estimation errors, characterized as the differences between meteorology-corrected trends and emission-driven trends under constant meteorology scenarios, can be reduced by 30\u2009%\u201342\u2009% using a random forest model that incorporates both local- and regional-scale meteorological features. We further design a correction method based on GEOS-Chem simulations with constant-emission input and quantify the degree to which anthropogenic emissions and meteorological influences are inseparable, due to their process-based interactions. We conclude by providing recommendations for evaluating the impacts of anthropogenic-emission changes on air quality using statistical approaches.<\/p>",
+        "title": "Statistical and machine learning methods  for evaluating trends in air quality under  changing meteorological conditions",
+        "authors": [
+            "M. Qiu",
+            "M. Qiu",
+            "C. Zigler",
+            "N. E. Selin",
+            "N. E. Selin"
+        ],
+        "year": "2022"
+    },
+    {
+        "doi": "10.5194\/isprs-annals-V-2-2021-129-2021",
+        "links": "https:\/\/www.isprs-ann-photogramm-remote-sens-spatial-inf-sci.net\/V-2-2021\/129\/2021\/isprs-annals-V-2-2021-129-2021.pdf",
+        "abstract": "The article describes an innovative procedure for the three-dimensional analysis of decay morphologies of ancient buildings, through the application of machine learning methods for the automatic segmentation of point clouds. In the field of Cultural Heritage conservation, photogrammetric data can be exploited, for diagnostic and monitoring support, to recognize different typologies of alterations visible on the masonry surface, starting from colour information. Actually, certain stone and plaster surface pathologies (biological patina, biological colonization, chromatic alterations, spots,&hellip;) are typically characterized by chromatic variations. To this purpose, colour-based segmentation with hierarchical clustering has been implemented on colour data of point clouds, considered in the HSV colour-space. In addition, geometry-based segmentation of 3D reconstructions has been performed, in order to identify the main architectural elements (walls, vaults), and to associate them to the detected defects. The proposed workflow has been applied to some ancient buildings\u2019 environments, chosen because of their irregularity both in geometrical and colorimetric characteristics.",
+        "title": "AUTOMATIC POINT CLOUD SEGMENTATION FOR THE DETECTION OF ALTERATIONS ON HISTORICAL BUILDINGS THROUGH AN UNSUPERVISED AND CLUSTERING-BASED MACHINE LEARNING APPROACH",
+        "authors": [
+            "A. Musicco",
+            "R. A. Galantucci",
+            "S. Bruno",
+            "C. Verdoscia",
+            "F. Fatiguso"
+        ],
+        "year": "2021"
+    },
+    {
+        "doi": "10.7717\/peerj-cs.1507",
+        "links": "https:\/\/peerj.com\/articles\/cs-1507.pdf",
+        "abstract": "COVID-19 has become a global pandemic that has affected not only the health sector but also economic, social, and psychological well-being. Individuals are using social media platforms to communicate their feelings and sentiments about the pandemic. One of the most debated topics in that regard is the vaccine. People are divided mainly into two groups, pro-vaccine and anti-vaccine. This article aims to explore Arabic Sentiment Analysis for Vaccine-Related COVID-19 Tweets (ASAVACT) to quantify sentiment polarity shared publicly, and it is considered the first and the largest human-annotated dataset in Arabic. The analysis is done using state-of-the-art deep learning models that proved superiority in the field of language processing and analysis. The models are the stacked gated recurrent unit (SGRU), the stacked bidirectional gated recurrent unit (SBi-GRU), and the ensemble architecture of SGRU, SBi-GRU, and AraBERT. Additionally, this article presents the largest Arabic Twitter corpus on COVID-19 vaccination, with 32,476 annotated Tweets. The results show that the ensemble model outperformed other singular models with at least 7% accuracy enhancement.",
+        "title": "ASAVACT: Arabic sentiment analysis for vaccine-related COVID-19 tweets using deep learning",
+        "authors": [
+            "Sarah Alhumoud",
+            "Asma Al Wazrah",
+            "Laila Alhussain",
+            "Lama Alrushud",
+            "Atheer Aldosari",
+            "Reema Nasser Altammami",
+            "Njood Almukirsh",
+            "Hind Alharbi",
+            "Wejdan Alshahrani"
+        ],
+        "year": "2023"
+    },
+    {
+        "doi": "10.5194\/amt-11-5687-2018",
+        "links": "https:\/\/www.atmos-meas-tech.net\/11\/5687\/2018\/amt-11-5687-2018.pdf",
+        "abstract": "<p>Compositional analysis of atmospheric and laboratory aerosols is often\r\nconducted via single-particle mass spectrometry (SPMS), an in situ and\r\nreal-time analytical technique that produces mass spectra on a\r\nsingle-particle basis. In this study, classifiers are created\r\nusing a data set of SPMS spectra to automatically differentiate particles on\r\nthe basis of chemistry and size. Machine learning algorithms build a\r\npredictive model from a training set for which the aerosol type associated\r\nwith each mass spectrum is known a priori. Our primary focus surrounds the\r\ngrowing of random forests using feature selection to reduce dimensionality\r\nand the evaluation of trained models with confusion matrices. In addition to\r\nclassifying \u2009\u223c\u200920\u00a0unique, but chemically similar, aerosol types, models\r\nwere also created to differentiate aerosol within four broader categories:\r\nfertile soils, mineral\/metallic particles, biological particles, and all other aerosols.\r\nDifferentiation was accomplished using \u2009\u223c\u200940\u00a0positive and negative\r\nspectral features. For the broad categorization, machine learning resulted in\r\na classification accuracy of \u2009\u223c\u200993&thinsp;%. Classification of aerosols by\r\nspecific type resulted in a classification accuracy of \u2009\u223c\u200987&thinsp;%. The\r\n<q>trained<\/q> model was then applied to a <q>blind<\/q> mixture of aerosols which\r\nwas known to be a subset of the training set. Model agreement was found on\r\nthe presence of secondary organic aerosol, coated and uncoated mineral dust,\r\nand fertile soil.<\/p>",
+        "title": "A machine learning approach to aerosol classification for single-particle mass spectrometry",
+        "authors": [
+            "C. D. Christopoulos",
+            "S. Garimella",
+            "S. Garimella",
+            "M. A. Zawadowicz",
+            "M. A. Zawadowicz",
+            "O. M\u00f6hler",
+            "D. J. Cziczo",
+            "D. J. Cziczo"
+        ],
+        "year": "2018"
+    },
+    {
+        "doi": "10.5604\/01.3001.0012.2617",
+        "links": "http:\/\/asej.eu\/gicid\/01.3001.0012.2617",
+        "abstract": "In the paper the authors discuss classifiers based on deterministic decision rules and\nnon-deterministic decision rules and prove that non-deterministic decision rules can be\nused for improving the quality of classification. The authors propose classifications\nalgorithms based on non-deterministic rules and minimal rules in the sense of rough\nsets. The classifiers in question are tested on the group of decision tables from the UCI\nMachine Learning Repository and the results are compared. The reported results of\nexperiments show that proposed classifiers based on non-deterministic rules give the\npossibility to improve the classification quality but with the requirement of tuning to the\ndata.",
+        "title": "NONDETERMINISTIC DECISION RULES",
+        "authors": [
+            "Piotr Paszek"
+        ],
+        "year": "2015"
+    },
+    {
+        "doi": "10.5194\/isprs-archives-XLVIII-4-W8-2023-101-2024",
+        "links": "https:\/\/isprs-archives.copernicus.org\/articles\/XLVIII-4-W8-2023\/101\/2024\/isprs-archives-XLVIII-4-W8-2023-101-2024.pdf",
+        "abstract": "Oil spills represent a significant environmental hazard necessitating timely detection to mitigate their detrimental effects. Synthetic Aperture Radar (SAR) technology serves as a remote sensing (RS)-based tool capable of detecting oil spills under varying weather conditions and at all times of day. SAR polarimetry, which assesses the polarization of the backscattered SAR signal, can effectively discriminate oil spills from other features that may manifest as dark regions in the SAR images. The integration of machine learning algorithms offers significant potential for enhancing the accuracy and efficiency of oil spill detection through SAR polarimetry. In recent years, several studies have introduced machine learning-based methodologies for this purpose, yet a comprehensive evaluation of their real-world performance remains essential. This study aimed to assess the efficacy of a machine learning (ML)-based approach for oil spill detection utilizing features derived from a dual-polarimetric decomposition method applied to Sentinel-1 SAR data. Results show that the machine learning-based approach achieved notable accuracy in oil spill detection reaching a score of 0.569 for intersection over union and 72.50 for f1-score of oil spill areas. Overall, this research underscores the potential of ML techniques as valuable tools for oil spill detection via SAR polarimetry.",
+        "title": "DUAL-POLARIMETRIC DECOMPOSITION OF SENTINEL-1 SAR IMAGE AND MACHINE LEARNING MODEL FOR OIL SPILL DETECTION: CASE OF MINDORO OIL SPILL",
+        "authors": [
+            "C. G. Candido",
+            "C. G. Candido",
+            "J. A. Principe"
+        ],
+        "year": "2024"
+    },
+    {
+        "doi": "10.5194\/gmd-16-869-2023",
+        "links": "https:\/\/gmd.copernicus.org\/articles\/16\/869\/2023\/gmd-16-869-2023.pdf",
+        "abstract": "<p>African and South American (ASA) wildfires account for more than 70\u2009% of\nglobal burned areas and have strong connection to local climate for\nsub-seasonal to seasonal wildfire dynamics. However, representation of the\nwildfire\u2013climate relationship remains challenging due to spatiotemporally\nheterogenous responses of wildfires to climate variability and human\ninfluences. Here, we developed an interpretable machine learning (ML) fire\nmodel (AttentionFire_v1.0) to resolve the complex controls of\nclimate and human activities on burned areas and to better predict burned\nareas over ASA regions. Our ML fire model substantially improved\npredictability of burned areas for both spatial and temporal dynamics\ncompared with five commonly used machine learning models. More importantly,\nthe model revealed strong time-lagged control from climate wetness on the\nburned areas. The model also predicted that, under a high-emission future climate scenario, the recently observed declines in burned area will reverse\nin South America in the near future due to climate changes. Our study\nprovides a reliable and interpretable fire model and highlights the importance\nof lagged wildfire\u2013climate relationships in historical and future\npredictions.<\/p>",
+        "title": "AttentionFire_v1.0: interpretable machine learning fire model for burned-area predictions over tropics",
+        "authors": [
+            "F. Li",
+            "F. Li",
+            "Q. Zhu",
+            "W. J. Riley",
+            "L. Zhao",
+            "L. Xu",
+            "K. Yuan",
+            "K. Yuan",
+            "M. Chen",
+            "H. Wu",
+            "Z. Gui",
+            "J. Gong",
+            "J. T. Randerson"
+        ],
+        "year": "2023"
+    },
+    {
+        "doi": "10.1051\/e3sconf\/202131211017",
+        "links": "https:\/\/www.e3s-conferences.org\/articles\/e3sconf\/pdf\/2021\/88\/e3sconf_ati2021_11017.pdf",
+        "abstract": "Predictive maintenance is the latest frontier in the management and maintenance of many industrial assets, including aeroengines. Made possible by last decades advances in monitoring equipment and machine learning algorithms, it permits individual-based maintenance schedules, on the basis of performance monitoring and estimates resulting from the application of diagnostic and prognostic techniques, whether on ground or real time. Predictive maintenance results in operational cost reduction and asset usage optimization, if compared with traditional maintenance strategies, which instead may suffer from unanticipated failure or unnecessary maintenance and therefore higher operational costs. In the study, Remaining Useful Life (RUL) estimates will be carried out for different turbofan engines, based on historical individual and fleet data made available by the Prognostics Center of Excellence at NASA.\nThe design of Prognostics and Health Management (PHM) algorithms requires at first an analysis of available data to identify which of them is effectively related to equipment degradation and hence could be useful in determining future system evolution and predicting failure.\nIn particular, RUL prediction of test engines suffering from high pressure compressor fault with exponential degradation trend has been carried out with both regression and Artificial Neural Networks (ANNs). In turn, different regression models and neural network architectures have been compared, namely tree regression with different levels of tree depth, Gaussian Process Regression (GPR) with different kernel functions and Multilayer Perceptron (MLP) with one to three hidden layers and varying number of nodes. The objective is to demonstrate the capability of such machine learning algorithms to predict engine failure and thus their importance in supporting predictive maintenance planning, and to evaluate the quality of results in relation to the algorithm structure.\nResults show comparable performance in terms of Mean Absolute Error (MAE) and Root Mean Square Error (RMSE) of predicted with respect to actual RUL, in particular predictions obtained through recourse to multilayer perceptron reveal to be the most accurate, with a RMSE of 17.38 and a MAE of 12.50.",
+        "title": "Prognostic techniques for aeroengine health assessment and Remaining Useful Life estimation",
+        "authors": [
+            "Caricato A.",
+            "Ficarella A.",
+            "Chiodo L. Spada"
+        ],
+        "year": "2021"
+    },
+    {
+        "doi": "10.7717\/peerj-cs.830",
+        "links": "https:\/\/peerj.com\/articles\/cs-830.pdf",
+        "abstract": "The presence of spam content in social media is tremendously increasing, and therefore the detection of spam has become vital. The spam contents increase as people extensively use social media, i.e., Facebook, Twitter, YouTube, and E-mail. The time spent by people using social media is overgrowing, especially in the time of the pandemic. Users get a lot of text messages through social media, and they cannot recognize the spam content in these messages. Spam messages contain malicious links, apps, fake accounts, fake news, reviews, rumors, etc. To improve social media security, the detection and control of spam text are essential. This paper presents a detailed survey on the latest developments in spam text detection and classification in social media. The various techniques involved in spam detection and classification involving Machine Learning, Deep Learning, and text-based approaches are discussed in this paper. We also present the challenges encountered in the identification of spam with its control mechanisms and datasets used in existing works involving spam detection.",
+        "title": "A systematic literature review on spam content detection and classification",
+        "authors": [
+            "Sanaa Kaddoura",
+            "Ganesh Chandrasekaran",
+            "Daniela Elena Popescu",
+            "Jude Hemanth Duraisamy"
+        ],
+        "year": "2022"
+    },
+    {
+        "doi": "10.1051\/e3sconf\/202346004035",
+        "links": "https:\/\/www.e3s-conferences.org\/articles\/e3sconf\/pdf\/2023\/97\/e3sconf_bft2023_04035.pdf",
+        "abstract": "This article delves into the crucial roles of parallelism and asynchrony in the development of high-performance software programs. It provides an insightful exploration into how these methodologies enhance computing systems' efficiency and performance. The discussion begins with an overview of high-performance programs and their importance in modern computing, followed by a detailed analysis of parallelism, including its hardware and software aspects, various programming models, and diverse applications in fields like computational tasks, data processing, and machine learning. The article then shifts focus to asynchrony, elaborating on its implementation through callback functions, promises, and the async\/await syntax. It highlights the significant benefits of asynchrony in improving program responsiveness and efficiency, especially in I\/O-bound and network-intensive operations. A critical section of the article examines the combined application of parallelism and asynchrony in different domains, notably in Graphics Processing Unit (GPU) computations, distributed systems, and web development. This combination is shown to be particularly effective in handling Big Data, where rapid and efficient data processing is essential. The article concludes by emphasizing the indispensable nature of these approaches in modern software development. Parallelism and asynchrony are not merely performance enhancement tools but are fundamental in building innovative, resilient, and scalable software solutions. This comprehensive exploration underscores the ongoing relevance of these methodologies and their potential to drive further advancements in the field of high-performance computing.",
+        "title": "Integrating parallelism and asynchrony for high-performance software development",
+        "authors": [
+            "Zaripova Rimma",
+            "Mentsiev Adam",
+            "Perukhin Marat"
+        ],
+        "year": "2023"
+    },
+    {
+        "doi": "10.32983\/2222-4459-2024-3-15-22",
+        "links": "https:\/\/www.business-inform.net\/export_pdf\/business-inform-2024-3_0-pages-15_22.pdf",
+        "abstract": "The aim of the article is to analyze the impact of digital transformation on the global financial architecture and economy. The study examines in detail the connection between the digital transformation of the global economy and changes in the world\u2019s financial systems, reveals the key trends and the challenges they generate. In recent decades, there has been a rapid development of digital technologies that affect all aspects of public life. The rapid progress of the information society, the globalization of information processes and the increasing activity in innovative areas of economic activity, such as online stores, online banks and electronic currencies, have significantly transformed the economic landscape. These changes have led to the formation of a new economic sector known as the \u00abdigital economy\u00bb. The conception of the \u00abdigital economy\u00bb became relevant at the end of the 20th century, when Nicholas Negroponte defined it in 1995 as the transition from the movement of atoms to the movement of bits. The digital economy is based on the use of digital technologies and includes e-business, e-commerce, and the products and services they generate. One of the most important aspects of digital transformation is increasing automation of processes. The use of artificial intelligence and machine learning to optimize production and business processes is becoming increasingly common. It is also noticeable that digital transformation encourages the development of new business models, in particular the platform economy. Within these models, ecosystems are created that bring together different industries and players to jointly achieve goals and solve problems. The results of the study highlight the importance of digital transformation as a key driver of economic development and structural changes in financial systems. This opens up new opportunities to increase productivity, increase competitiveness, and foster innovation.",
+        "title": "The Connection Between the Transformation of the World Financial Architecture and the Digital Transformation of the Global Economy",
+        "authors": [
+            "Shevtsova Alina V.",
+            "Dovgal Olena A."
+        ],
+        "year": "2024"
+    },
+    {
+        "doi": "https:\/\/doi.org\/10.24425\/ijet.2019.126314",
+        "links": "https:\/\/journals.pan.pl\/Content\/110227\/PDF\/40.pdf",
+        "abstract": "A variety of algorithms allows gesture recognition in video sequences. Alleviating the need for interpreters is of interest to hearing impaired people, since it allows a great degree of self-sufficiency in communicating their intent to the non-sign language speakers without the need for interpreters. State-of-theart in currently used algorithms in this domain is capable of either real-time recognition of sign language in low resolution videos or non-real-time recognition in high-resolution videos. This paper proposes a novel approach to real-time recognition of fingerspelling alphabet letters of American Sign Language (ASL) in ultra-high-resolution (UHD) video sequences. The proposed approach is based on adaptive Laplacian of Gaussian (LoG) filtering with local extrema detection using Features from Accelerated Segment Test (FAST) algorithm classified by a Convolutional Neural Network (CNN). The recognition rate of our algorithm was verified on real-life data.",
+        "title": "Recognition of Sign Language from High Resolution Images Using Adaptive Feature Extraction and Classification",
+        "authors": [
+            "Filip Cs\u00f3ka",
+            "Jaroslav Polec",
+            "Tibor Cs\u00f3ka",
+            "Juraj Ka\u010dur"
+        ],
+        "year": "2019"
+    },
+    {
+        "doi": "10.5194\/hess-28-525-2024",
+        "links": "https:\/\/hess.copernicus.org\/articles\/28\/525\/2024\/hess-28-525-2024.pdf",
+        "abstract": "<p>The application of machine learning (ML) including deep learning models in hydrogeology to model and predict groundwater level in monitoring wells has gained some traction in recent years. Currently, the dominant model class is the so-called single-well model, where one model is trained for each well separately. However, recent developments in neighbouring disciplines including hydrology (rainfall\u2013runoff modelling) have shown that global models, being able to incorporate data of several wells, may have advantages. These models are often called \u201centity-aware models\u201c, as they usually rely on static data to differentiate the entities, i.e.\u00a0groundwater wells in hydrogeology or catchments in surface hydrology. We test two kinds of static information to characterize the groundwater wells in a global, entity-aware deep learning model set-up: first, environmental features that are continuously available and thus theoretically enable spatial generalization (regionalization), and second, time-series features that are derived from the past time series at the respective well. Moreover, we test random integer features as entity information for comparison. We use a published dataset of 108 groundwater wells in Germany, and evaluate the performance of the models in terms of Nash\u2013Sutcliffe efficiency (NSE) in an in-sample and an out-of-sample setting, representing temporal and spatial generalization. Our results show that entity-aware models work well with a mean performance of NSE <span class=\"inline-formula\">&gt;0.8<\/span> in an in-sample setting, thus being comparable to, or even outperforming, single-well models. However, they do not generalize well spatially in an out-of-sample setting (mean NSE <span class=\"inline-formula\">&lt;0.7<\/span>, i.e.\u00a0lower than a global model without entity information). Strikingly, all model variants, regardless of the type of static features used, basically perform equally well both in- and out-of-sample. The conclusion is that the model in fact does not show entity awareness, but uses static features merely as unique identifiers, raising the research question of how to properly establish entity awareness in deep learning models. Potential future avenues lie in bigger datasets, as the relatively small number of wells in the dataset might not be enough to take full advantage of global models. Also, more research is needed to find meaningful static features for ML in hydrogeology.<\/p>",
+        "title": "On the challenges of global entity-aware deep learning models for groundwater level prediction",
+        "authors": [
+            "B. Heudorfer",
+            "T. Liesch",
+            "S. Broda"
+        ],
+        "year": "2024"
+    },
+    {
+        "doi": "10.7717\/peerj-cs.397",
+        "links": "https:\/\/peerj.com\/articles\/cs-397.pdf",
+        "abstract": "The Alternating Direction Method of Multipliers (ADMM) is a popular and promising distributed framework for solving large-scale machine learning problems. We consider decentralized consensus-based ADMM in which nodes may only communicate with one-hop neighbors. This may cause slow convergence. We investigate the impact of network topology on the performance of an ADMM-based learning of Support Vector Machine using expander, and mean-degree graphs, and additionally some of the common modern network topologies. In particular, we investigate to which degree the expansion property of the network influences the convergence in terms of iterations, training and communication time. We furthermore suggest which topology is preferable. Additionally, we provide an implementation that makes these theoretical advances easily available. The results show that the performance of decentralized ADMM-based learning of SVMs in terms of convergence is improved using graphs with large spectral gaps, higher and homogeneous degrees.",
+        "title": "Effects of network topology on the performance of consensus and distributed learning of SVMs using ADMM",
+        "authors": [
+            "Shirin Tavara",
+            "Alexander Schliep"
+        ],
+        "year": "2021"
+    },
+    {
+        "doi": "10.5267\/j.ijdns.2023.5.004",
+        "links": "http:\/\/www.growingscience.com\/ijds\/Vol7\/ijdns_2023_64.pdf",
+        "abstract": "         This paper examines speakers\u2019 systematic errors while speaking English as a foreign language (EFL) among students in Arab countries with the purpose of automatically recognizing and correcting mispronunciations using speech recognition, phonological features, and machine learning. Accordingly, three main steps are implemented towards this purpose: identifying the most frequently wrongly pronounced phonemes by Arab students, analyzing the systematic errors these students make in doing so, and developing a framework that can aid the detection and correction of these pronunciation errors. The proposed automatic detection and correction framework used the collected and labeled data to construct a customized acoustic model to identify and correct incorrect phonemes. Based on the trained data, the language model is then used to recognize the words. The final step includes construction samples of both correct and incorrect pronunciation in the phonemes model and then using machine learning to identify and correct the errors. The results showed that one of the main causes of such errors was the confusion that leads to wrongly utilizing a given sound in place of another. The automatic framework identified and corrected 98.2% of the errors committed by the students using a decision tree classifier. The decision tree classifier achieved the best recognition results compared to the five classifiers used for this purpose.",
+        "title": "A framework for pronunciation error detection and correction for non-native Arab speakers of English language",
+        "authors": [
+            "Bandar Ali Al-Rami",
+            "Yousef Houssni  Zrekat"
+        ],
+        "year": "2023"
+    },
+    {
+        "doi": "10.7538\/zpxb.2022.0090",
+        "links": "http:\/\/www.jcmss.com.cn\/CN\/article\/openArticlePDF.jsp?attachType=PDF&id=3097",
+        "abstract": "Metabolomics aims to systematically profile various small molecules (i.e., metabolites and lipids) in biological samples. Compared with genomics, transcriptomics and proteomics, metabolomics locates in the downstream of omics technologies, which links genotype with phenotype. Metabolomics is an important part of system biology. It has been widely applied to discover diagnostic biomarkers and understand disease pathogenesis. Due to the high structure diversity and numerous isomers of metabolites and lipids, high-accuracy and high-coverage analysis of complex biological samples  remain the bottleneck for comprehensive metabolomics analysis. Recently, ion mobility-mass spectrometry (IM-MS) has emerged as a promising technology for metabolomics. Ion mobility is a separation technology for gas phase. The multiple collisions between ions and neutral buffer gas under the influence of an electric field in mobility cell were utilized to rapidly separate ions with different sizes, shapes and charges. Compared with traditional separation method (i.e., gas phase separation and liquid chromatography separation), this method can increase the peak capacity, reduce noisy signals, improve sensitivity and selectivity. More importantly, the collision cross section (CCS) value derived from IM-MS is a new physio-chemical property to aid the annotation of chemical structures of known and unknown metabolites. CCS value is high reproducibility among different labs and instruments, which is suitable to be standardized for database establishment and wide application on metabolomics analysis. Therefore, it is important to ensure the accurate CCS measurement and develop high coverage CCS database for metabolomics. There are three major types of commercially available ion mobility-mass spectrometers, including time-dispersive, spatial-dispersive, and confinement and selective release. Due to different instrument design, the CCS value calculation and calibration methods are different. It is necessary to use the appropriate calibration solutions and methods for CCS measurement. Recently, CCS databases for small molecules have been established, which can be classified as two types of experimental measurement and in silico curation. Metabolite standard was usually used to acquire the accurate experimental CCS values. However, the number of available metabolite standards limits the coverage of CCS database. Instead, with the progress of theoretical calculation and machine learning, CCS values significantly expand the coverage of CCS database in silico curation, which are also accurate enough for metabolites identification. In this review, the basic principles of commercial IM-MS instruments that commonly used for metabolomics were introduced. Then, the experimental measurement and calibration of CCS values for different IM-MS instruments were summarized. The available CCS databases used for metabolomics were demonstrated. Finally, the applications of CCS values to support metabolomics were discussed.",
+        "title": "Ion Mobility-Mass Spectrometry-Based Measurements of Collision Cross Section Values for Metabolites and Related Databases",
+        "authors": [
+            "CHEN Xi1,2",
+            "LI Tong-zhou1",
+            "ZHU Zheng-jiang1"
+        ],
+        "year": "2022"
+    },
+    {
+        "doi": "https:\/\/doi.org\/10.24425\/acs.2024.153104",
+        "links": "https:\/\/journals.pan.pl\/Content\/133809\/art08.pdf",
+        "abstract": "Hybrid welding processes have gained significant attention due to their high efficiency and exceptional welding properties. However, there are still significant technological challenges in achieving consistent quality and suppressing welding defects. To overcome this challenge, researchers have focused on the integration of visual analysis techniques, numerical simulation techniques, and advanced technologies such as artificial intelligence\/machine learning (AI\/ML) and digital twins. This comprehensive review synthesizes current knowledge on quality monitoring in hybrid welding, encompassing an overview of hybrid welding processes, quality assurance, monitoring techniques, key performance indicators, and advancements in monitoring techniques. Furthermore, the review highlights the integration of sensor data with AI\/ML algorithms and digital twin technologies, enhancing the capabilities of quality monitoring systems. Notably, the review emphasizes the incorporation of artificial intelligence (AI) and digital twin technologies into quality monitoring frameworks. Artificial intelligence\/Machine learning enables real-time analysis of welding parameters and defect detection, while digital twins offer virtual representations of physical welding processes, facilitating predictive maintenance and optimization. The findings underscore the crucial role of sensor technology, AI\/ML, and digital twin integration in enhancing defect detection accuracy, improving welded joint quality, and control in hybrid welding. In addition to improving the quality of welded joints, this integration paves the way for further developments in welding technology.",
+        "title": "Quality monitoring of hybrid welding processes: A comprehensive review",
+        "authors": [
+            "Solomon Habtamu Tessema",
+            "Dariusz Bismor"
+        ],
+        "year": "2024"
+    },
+    {
+        "doi": "10.5194\/tc-14-1763-2020",
+        "links": "https:\/\/www.the-cryosphere.net\/14\/1763\/2020\/tc-14-1763-2020.pdf",
+        "abstract": "<p>We investigated the potential capability of the random forest (RF)\nmachine learning (ML) model to estimate snow depth in this work. Four\ncombinations composed of critical predictor variables were used to train the\nRF model. Then, we utilized three validation datasets from out-of-bag (OOB)\nsamples, a temporal subset, and a spatiotemporal subset to verify the fitted\nRF algorithms. The results indicated the following: (1)\u00a0the accuracy of the\nRF model is greatly influenced by geographic location, elevation, and land\ncover fractions; (2)\u00a0however, the redundant predictor variables (if highly\ncorrelated) slightly affect the RF model; and (3)\u00a0the fitted RF algorithms\nperform better on temporal than spatial scales, with unbiased root-mean-square errors (RMSEs) of <span class=\"inline-formula\">\u223c4.4<\/span>  and <span class=\"inline-formula\">\u223c7.3<\/span>&thinsp;cm,\nrespectively. Finally, we used the fitted RF2 algorithm to retrieve a\nconsistent 32-year daily snow depth dataset from 1987 to 2018. This product\nwas evaluated against the independent station observations during the period\n1987\u20132018. The mean unbiased RMSE and bias were 7.1 and <span class=\"inline-formula\">\u22120.05<\/span>&thinsp;cm,\nrespectively, indicating better performance than that of the former snow\ndepth dataset (8.4  and <span class=\"inline-formula\">\u22121.20<\/span>&thinsp;cm) from the Environmental and Ecological\nScience Data Center for West China (WESTDC). Although the RF product was\nsuperior to the WESTDC dataset, it still underestimated deep snow cover\n(<span class=\"inline-formula\">&gt;20<\/span>&thinsp;cm), with biases of <span class=\"inline-formula\">\u221210.4<\/span>, <span class=\"inline-formula\">\u22128.9<\/span>, and <span class=\"inline-formula\">\u221234.1<\/span>&thinsp;cm for\nnortheast China (NEC), northern Xinjiang (XJ), and the Qinghai\u2013Tibetan Plateau\n(QTP), respectively. Additionally, the long-term snow depth datasets\n(station observations, RF estimates, and WESTDC product) were analyzed in\nterms of temporal and spatial variations over China. On a temporal scale,\nthe ground truth snow depth presented a significant increasing trend from\n1987 to 2018, especially in NEC. However, the RF and WESTDC products\ndisplayed no significant changing trends except on the QTP. The WESTDC\nproduct presented a significant decreasing trend on the QTP, with a\ncorrelation coefficient of <span class=\"inline-formula\">\u22120.55<\/span>, whereas there were no significant trends\nfor ground truth observations and the RF product. For the spatial\ncharacteristics, similar trend patterns were observed for RF and WESTDC\nproducts over China. These characteristics presented significant decreasing\ntrends in most areas and a significant increasing trend in central\u00a0NEC.<\/p>",
+        "title": "Snow depth estimation and historical data reconstruction over China based on a random forest machine learning approach",
+        "authors": [
+            "J. Yang",
+            "L. Jiang",
+            "K. Luojus",
+            "J. Pan",
+            "J. Lemmetyinen",
+            "M. Takala",
+            "S. Wu"
+        ],
+        "year": "2020"
+    },
+    {
+        "doi": "10.1051\/epjconf\/202431503012",
+        "links": "https:\/\/www.epj-conferences.org\/articles\/epjconf\/pdf\/2024\/25\/epjconf_lcws2024_03012.pdf",
+        "abstract": "We have developed an energy calibration method using machine learning for the ILC electromagnetic (EM) calorimeter (ECAL), a sampling calorimeter consisting of Silicon-Tungsten layers. In this method, we use a deep neural network (DNN) for a regression to determine the energy of incident EM particles, improving the energy calibration resolution of the ECAL. The DNN architecture takes cluster hit data as low-level features of the cluster. In this paper, we report the status of our R&D and present results on energy calibration accuracy.",
+        "title": "R&D of the EM Calorimeter Energy Calibration with Machine Learning based on the low-level features of the Cluster",
+        "authors": [
+            "Morimasa Suzuna",
+            "Iwasaki Masako",
+            "Suehara Taikan",
+            "Tanaka Junichi",
+            "Saito Masahiko",
+            "Nagahara Hajime",
+            "Nakashima Yuta",
+            "Takemura Noriko",
+            "Nakano Takashi"
+        ],
+        "year": "2024"
+    },
+    {
+        "doi": "10.7717\/peerj.14836",
+        "links": "https:\/\/peerj.com\/articles\/14836.pdf",
+        "abstract": "Background Women with higher breast density are at higher risk of developing breast cancer. Breast density is known to affect sensitivity to mammography and to decrease with age. However, the age change and associated factors involved are still unknown. This study aimed to investigate changes in breast density and the associated factors over a 10-year period. Materials and Methods The study included 221 women who had undergone eight or more mammograms for 10 years (2011\u20132020), were between 25 and 65 years of age, and had no abnormalities as of 2011. Breast density on mammographic images was classified into four categories: fatty, scattered, heterogeneously dense, and extremely dense. Breast density was determined using an image classification program with a Microsoft Lobe\u2019s machine-learning model. The temporal changes in breast density over a 10-year period were classified into three categories: no change, decrease, and increase. An ordinal logistic analysis was performed with the three groups of temporal changes in breast density categories as the objective variable and the four items of breast density at the start, BMI, age, and changes in BMI as explanatory variables. Results As of 2011, the mean age of the 221 patients was 47\u00a0\u00b1\u00a07.3 years, and breast density category 3 scattered was the most common (67.0%). The 10-year change in breast density was 64.7% unchanged, 25.3% decreased, and 10% increased. BMI was increased by 64.7% of women. Breast density decreased in 76.6% of the category at the start: extremely dense breast density at the start was correlated with body mass index (BMI). The results of the ordinal logistic analysis indicated that contributing factors to breast density classification were higher breast density at the start (odds ratio = 0.044; 95% CI [0.025\u20130.076]), higher BMI at the start (odds ratio = 0.76; 95% CI [0.70\u20130.83]), increased BMI (odds ratio = 0.57; 95% CI [0.36\u20130.92]), and age in the 40s at the start (odds ratio = 0.49; 95% CI [0.24\u20130.99]). No statistically significant differences were found for medical history. Conclusion Breast density decreased in approximately 25% of women over a 10-year period. Women with decreased breast density tended to have higher breast density or higher BMI at the start. This effect was more pronounced among women in their 40s at the start. Women with these conditions may experience changes in breast density over time. The present study would be useful to consider effective screening mammography based on breast density.",
+        "title": "Age-related change in mammographic breast density of women without history of breast cancer over a 10-year retrospective study",
+        "authors": [
+            "Aiko Ohmaru",
+            "Kazuhiro Maeda",
+            "Hiroyuki Ono",
+            "Seiichiro Kamimura",
+            "Kyoko Iwasaki",
+            "Kazuhiro Mori",
+            "Michiaki Kai"
+        ],
+        "year": "2023"
+    },
+    {
+        "doi": "10.7717\/peerj-cs.233",
+        "links": "https:\/\/peerj.com\/articles\/cs-233.pdf",
+        "abstract": "Background MicroRNAs (miRNAs) play a vital role as post-transcriptional regulators in gene expression. Experimental determination of miRNA sequence and structure is both expensive and time consuming. The next-generation sequencing revolution, which facilitated the rapid accumulation of biological data has brought biology into the \u201cbig data\u201d domain. As such, developing computational methods to predict miRNAs has become an active area of inter-disciplinary research. Objective The objective of this systematic review is to focus on the developments of ab initio plant miRNA identification methods over the last decade. Data sources Five databases were searched for relevant articles, according to a well-defined review protocol. Study selection The search results were further filtered using the selection criteria that only included studies on novel plant miRNA identification using machine learning. Data extraction Relevant data from each study were extracted in order to carry out an analysis on their methodologies and findings. Results Results depict that in the last decade, there were 20 articles published on novel miRNA identification methods in plants of which only 11 of them were primarily focused on plant microRNA identification. Our findings suggest a need for more stringent plant-focused miRNA identification studies. Conclusion Overall, the study accuracies are of a satisfactory level, although they may generate a considerable number of false negatives. In future, attention must be paid to the biological plausibility of computationally identified miRNAs to prevent further propagation of biologically questionable miRNA sequences.",
+        "title": "Computational methods for the ab initio identification of novel microRNA in plants: a systematic review",
+        "authors": [
+            "Buwani Manuweera",
+            "Gillian Reynolds",
+            "Indika Kahanda"
+        ],
+        "year": "2019"
+    },
+    {
+        "doi": "10.1051\/e3sconf\/202449103013",
+        "links": "https:\/\/www.e3s-conferences.org\/articles\/e3sconf\/pdf\/2024\/21\/e3sconf_icecs2024_03013.pdf",
+        "abstract": "Anticipating heart illness has been one of the foremost challenging errands in medication in later a long time. Nowadays approximately one individual passes on from a heart assault each miniature. Information science plays an imperative part in handling expansive sums of information in healthcare. Since the desire of heart disease may be a troublesome errand. It is essential to total the determining prepare to maintain a strategic distance from the chance related with it and to caution patients in development. This venture employments a heart malady database with 303 persistent records and 13 parameters. This article works the hazard of heart assault utilizing distinctive learning calculations such as Calculated Relapse, Irregular Timberland, K Neighbors, and finds he leading calculation from the proper ones and returns the yield in like manner. In this way, this amplify provides a comparison by analyzing the performance of a custom learning machine.",
+        "title": "Machine learning based heart disease prediction system",
+        "authors": [
+            "Kanimozhi S.",
+            "Sivanandan N."
+        ],
+        "year": "2024"
+    },
+    {
+        "doi": "10.1051\/epjconf\/202429507009",
+        "links": "https:\/\/www.epj-conferences.org\/articles\/epjconf\/pdf\/2024\/05\/epjconf_chep2024_07009.pdf",
+        "abstract": "The large data volumes expected from the High Luminosity LHC (HL-LHC) present challenges to existing paradigms and facilities for end-user data analysis. Modern cyberinfrastructure tools provide a diverse set of services that can be composed into a system that provides physicists with powerful tools that give them straightforward access to large computing resources, with low barriers to entry. The Coffea-Casa analysis facility (AF) provides an environment for end users enabling the execution of increasingly complex analyses such as those demonstrated by the Analysis Grand Challenge (AGC) and capturing the features that physicists will need for the HL-LHC.\nWe describe the development progress of the Coffea-Casa facility featuring its modularity while demonstrating the ability to port and customize the facility software stack to other locations. The facility also facilitates the support of batch systems while staying Kubernetes-native. We present the evolved architecture of the facility, such as the integration of advanced data delivery services (e.g. ServiceX) and making data caching services (e.g. XCache) available to end users of the facility. We also highlight the composability of modern cyberinfrastructure tools. To enable machine learning pipelines at coffee-casa analysis facilities, a set of industry ML solutions adopted for HEP columnar analysis were integrated on top of existing facility services. These services also feature transparent access for user workflows to GPUs available at a facility via inference servers while using Kubernetes as enabling technology.",
+        "title": "Coffea-Casa: Building composable analysis facilities for the HL-LHC",
+        "authors": [
+            "Albin Sam",
+            "Attebury Garhan",
+            "Bloom Kenneth",
+            "Bockelman Brian",
+            "Lundstedt Carl",
+            "Shadura Oksana",
+            "Thiltges John"
+        ],
+        "year": "2024"
+    },
+    {
+        "doi": "http:\/\/doi.org\/10.17059\/2020-2-17",
+        "links": "https:\/\/www.economyofregion.com\/data\/jarticles\/3282.pdf",
+        "abstract": "The  paper  analyses  the  prospects  of  applying  artificia l intelligenc e (AI ) technologie s i n agricultur e o f Sverdlovs k oblast. This  topic  is  currently  relevant,  as  in  the  context  of  the  rapid  technological  development  and  various  innovations  in  the digital sphere; there is still considerable uncertainty about using AI in agricultural production. During the preparatory phase, an  analysis  of  publications  in  the  Web  of  Science  (WoS)  allowed  to  identify  the  nature  and  scope  of  the  application  of  AI technologies  in  agriculture.  Relying  on  a  survey  of  managers  from  55  agricultural  organizations,  the  study  determines  the problems and prospects of using AI technologies in the regional agriculture. The respondents claim it is appropriate to use AI technologies for producing livestock products (26.0 %) and ensuring animal welfare (18.5 %). Considering the application of such technologies, the respondents expect an increase in production (23.2 %) and a decrease in costs (20.3 %). More than half of the respondents express their belief that AI technologists will significantly change agricultural production, reducing low-skilled labour employment while creating new jobs in the intellectual sphere. However, a positive perception of AI technologies may be the reason for somewhat unrealistic expectations from their use. A large part of the surveyed managers (65.5 %) presumes that these technologies will increase the production profitability, even though only 9.8% of the respondents are currently using them. The application of AI technologies in the regional agriculture is limited due to their high cost and the lack of funds. In order to overcome these constraints, it is necessary to increase state support and train staff. AI technologies will enable forecast accuracy in various areas of agriculture that will attract additional investments in the regional agriculture. Executive authorities can use the research results for creating programs of digital agriculture development.",
+        "title": "Prospects of Applying Artificial Intelligence Technologies in the Regional Agriculture",
+        "authors": [
+            "Egor Artemovich Skvortsov"
+        ],
+        "year": "2020"
+    },
+    {
+        "doi": "10.1051\/e3sconf\/202126101021",
+        "links": "https:\/\/www.e3s-conferences.org\/articles\/e3sconf\/pdf\/2021\/37\/e3sconf_icemee2021_01021.pdf",
+        "abstract": "In the field of defect recognition, deep learning technology has the advantages of strong generalization and high accuracy compared with mainstream machine learning technology. This paper proposes a deep learning network model, which first processes the self-made 3, 600 data sets, and then sends them to the built convolutional neural network model for training. The final result can effectively identify the three defects of lithium battery pole pieces. The accuracy rate is 92%. Compared with the structure of the AlexNet model, the model proposed in this paper has higher accuracy.",
+        "title": "Research on Defect Recognition of Lithium Battery Pole Piece Based on Deep Learning",
+        "authors": [
+            "Li Jiwei",
+            "Li Linsheng",
+            "Xu Changlu"
+        ],
+        "year": "2021"
+    },
+    {
+        "doi": "10.1371\/journal.pone.0197041",
+        "links": "http:\/\/europepmc.org\/articles\/PMC5942808?pdf=render",
+        "abstract": "Type IV secretion systems (T4SS) are multi-protein complexes in a number of bacterial pathogens that can translocate proteins and DNA to the host. Most T4SSs function in conjugation and translocate DNA; however, approximately 13% function to secrete proteins, delivering effector proteins into the cytosol of eukaryotic host cells. Upon entry, these effectors manipulate the host cell's machinery for their own benefit, which can result in serious illness or death of the host. For this reason recognition of T4SS effectors has become an important subject. Much previous work has focused on verifying effectors experimentally, a costly endeavor in terms of money, time, and effort. Having good predictions for effectors will help to focus experimental validations and decrease testing costs. In recent years, several scoring and machine learning-based methods have been suggested for the purpose of predicting T4SS effector proteins. These methods have used different sets of features for prediction, and their predictions have been inconsistent. In this paper, an optimal set of features is presented for predicting T4SS effector proteins using a statistical approach. A thorough literature search was performed to find features that have been proposed. Feature values were calculated for datasets of known effectors and non-effectors for T4SS-containing pathogens for four genera with a sufficient number of known effectors, Legionella pneumophila, Coxiella burnetii, Brucella spp, and Bartonella spp. The features were ranked, and less important features were filtered out. Correlations between remaining features were removed, and dimensional reduction was accomplished using principal component analysis and factor analysis. Finally, the optimal features for each pathogen were chosen by building logistic regression models and evaluating each model. The results based on evaluation of our logistic regression models confirm the effectiveness of our four optimal sets of features, and based on these an optimal set of features is proposed for all T4SS effector proteins.",
+        "title": "An optimal set of features for predicting type IV secretion system effector proteins for a subset of species based on a multi-level feature selection approach.",
+        "authors": [
+            "Zhila Esna Ashari",
+            "Nairanjana Dasgupta",
+            "Kelly A Brayton",
+            "Shira L Broschat"
+        ],
+        "year": "2018"
+    },
+    {
+        "doi": "10.5194\/isprsannals-II-3-W5-57-2015",
+        "links": "http:\/\/www.isprs-ann-photogramm-remote-sens-spatial-inf-sci.net\/II-3-W5\/57\/2015\/isprsannals-II-3-W5-57-2015.pdf",
+        "abstract": "Laser scanners on a vehicle-based mobile mapping system can capture 3D point-clouds of roads and roadside objects. Since roadside objects have to be maintained periodically, their 3D models are useful for planning maintenance tasks. In our previous work, we proposed a method for detecting cylindrical poles and planar plates in a point-cloud. However, it is often required to further classify pole-like objects into utility poles, streetlights, traffic signals and signs, which are managed by different organizations. In addition, our previous method may fail to extract low pole-like objects, which are often observed in urban residential areas. In this paper, we propose new methods for extracting and classifying pole-like objects. In our method, we robustly extract a wide variety of poles by converting point-clouds into wireframe models and calculating cross-sections between wireframe models and horizontal cutting planes. For classifying pole-like objects, we subdivide a pole-like object into five subsets by extracting poles and planes, and calculate feature values of each subset. Then we apply a supervised machine learning method using feature variables of subsets. In our experiments, our method could achieve excellent results for detection and classification of pole-like objects.",
+        "title": "DETECTION AND CLASSIFICATION OF POLE-LIKE OBJECTS FROM MOBILE MAPPING DATA",
+        "authors": [
+            "K. Fukano",
+            "H. Masuda"
+        ],
+        "year": "2015"
+    },
+    {
+        "doi": "10.5194\/isprs-archives-XLIII-B2-2020-263-2020",
+        "links": "https:\/\/www.int-arch-photogramm-remote-sens-spatial-inf-sci.net\/XLIII-B2-2020\/263\/2020\/isprs-archives-XLIII-B2-2020-263-2020.pdf",
+        "abstract": "Feature extraction from a range of scales is crucial for successful classification of objects of different size in 3D point clouds with varying point density. 3D point clouds have high relevance in application areas such as terrain modelling, building modelling or autonomous driving. A large amount of such data is available but also that these data is subject to investigation in the context of different tasks like segmentation, classification, simultaneous localisation and mapping and others. In this paper, we introduce a novel multiscale approach to recover neighbourhood in unstructured 3D point clouds. Unlike the typical strategy of defining one single scale for the whole dataset or use a single optimised scale for every point, we consider an interval of scales. In this initial work our primary goal is to evaluate the information gain through the usage of the multiscale neighbourhood definition for the calculation of shape features, which are used for point classification. Therefore, we show and discuss empirical results from the application of classical classification models to multiscale features. The unstructured nature of 3D point cloud makes it necessary to recover neighbourhood information before meaningful features can be extracted. This paper proposes the extraction of geometrical features from a range of neighbourhood with different scales, i.e. neighborhood ranges. We investigate the utilisation of the large set of features in combination with feature aggregation\/selection algorithms and classical machine learning techniques. We show that the all-scale-approach outperform single scale approaches as well as the approach with an optimised per point selected scale.",
+        "title": "FEATURE-EXTRACTION FROM ALL-SCALE NEIGHBORHOODS WITH APPLICATIONS TO SEMANTIC SEGMENTATION OF POINT CLOUDS",
+        "authors": [
+            "A. Leichter",
+            "M. Werner",
+            "M. Sester"
+        ],
+        "year": "2020"
+    },
+    {
+        "doi": "10.5194\/amt-16-669-2023",
+        "links": "https:\/\/amt.copernicus.org\/articles\/16\/669\/2023\/amt-16-669-2023.pdf",
+        "abstract": "<p>The TROPOspheric Monitoring Instrument (TROPOMI) on board the Sentinel-5 Precursor satellite enables\nthe accurate determination of atmospheric methane (<span class=\"inline-formula\">CH<sub>4<\/sub><\/span>) and carbon monoxide (<span class=\"inline-formula\">CO<\/span>)\nabundances at high spatial resolution and global daily sampling. Due to its wide swath and\nsampling, the global distribution of both gases can be determined in unprecedented detail. The\nscientific retrieval algorithm Weighting Function Modified Differential Optical Absorption\nSpectroscopy (WFMD) has proven valuable in simultaneously retrieving the atmospheric\ncolumn-averaged dry-air mole fractions <span class=\"inline-formula\">XCH<sub>4<\/sub><\/span> and <span class=\"inline-formula\">XCO<\/span> from TROPOMI's radiance\nmeasurements in the shortwave infrared (SWIR) spectral range.<\/p>\n\n      <p>Here we present recent improvements of the algorithm which have been incorporated into the current\nversion (v1.8) of the TROPOMI\/WFMD product. This includes processing adjustments such as increasing\nthe polynomial degree to 3 in the fitting procedure to better account for possible spectral albedo\nvariations within the fitting window and updating the digital elevation model to minimise topography-related biases. In the post-processing, the machine-learning-based quality filter has\nbeen refined using additional data when training the random forest classifier to further reduce\nscenes with residual cloudiness that are incorrectly classified as good. In particular, the cloud\nfiltering over the Arctic ocean is considerably improved. Furthermore, the machine learning\ncalibration, addressing systematic errors due to simplifications in the forward model or\ninstrumental issues, has been optimised. By including an additional feature associated with the\nfitted polynomial when training the corresponding random forest regressor, spectral albedo\nvariations are better accounted for. To remove vertical stripes in the <span class=\"inline-formula\">XCH<sub>4<\/sub><\/span> and <span class=\"inline-formula\">XCO<\/span>\ndata, an efficient orbit-wise destriping filter based on combined wavelet\u2013Fourier filtering has been\nimplemented, while optimally preserving the original spatial trace gas features. The temporal\ncoverage of the data records has been extended to the end of April 2022, covering a total length of 4.5\u00a0years since the start of the mission, and will be further extended in the future.<\/p>\n\n      <p>Validation with the ground-based Total Carbon Column Observing Network (TCCON) demonstrates\nthat the implemented improvements reduce the pseudo-noise component of the products, resulting in an\nimproved random error. The <span class=\"inline-formula\">XCH<sub>4<\/sub><\/span> and <span class=\"inline-formula\">XCO<\/span> products have similar spatial coverage from\nyear to year including high latitudes and the oceans. The analysis of annual growth rates reveals\naccelerated growth of atmospheric methane during the covered period, in line with observations\nat marine surface sites of the Global Monitoring Division of NOAA's Earth System Research\nLaboratory, which reported consecutive annual record increases over the past 2\u00a0years of 2020 and 2021.<\/p>",
+        "title": "Advances in retrieving XCH<sub>4<\/sub> and XCO from Sentinel-5 Precursor: improvements in the scientific TROPOMI\/WFMD algorithm",
+        "authors": [
+            "O. Schneising",
+            "M. Buchwitz",
+            "J. Hachmeister",
+            "S. Vanselow",
+            "M. Reuter",
+            "M. Buschmann",
+            "H. Bovensmann",
+            "J. P. Burrows"
+        ],
+        "year": "2023"
+    },
+    {
+        "doi": "10.4108\/eai.13-7-2018.159407",
+        "links": "https:\/\/eudl.eu\/pdf\/10.4108\/eai.13-7-2018.159407",
+        "abstract": "The objective of this work is to present a comprehensive exploration of deep learning based wind forecasting model. The forecasting of speed of wind is called as the wind speed forecasting\/prediction. It is basically done to achieve the better sustainability for power generation and production. The availability of wind energy in ample amount makes it quitecomfortable to be utilized for various functionalities. In this research work the main aim is to forecast speed using LSTM including certain parameters and then comparative analysis is done using SVM. Both are machine learning approaches but have different functionalities in comparison to each other. This comparison is done to obtain the better technique which can be further applied on larger datasets to design a better, accurate, efficient forecasting model for speed of wind. The survey and implementation of both the techniques gave a clear idea about the utilisation of long short term memory for the better and enhanced wind speed forecasting. The forecasting is based on various atmospheric variables, and the data set istaken from the kaggle datsets which have numerous attributes but we have considered few of them only for the prediction purpose.",
+        "title": "Comparative Analysis of Wind Speed Forecasting Using LSTM and SVM",
+        "authors": [
+            "Satyam Gangwar",
+            "Vikram Bali",
+            "Ajay Kumar"
+        ],
+        "year": "2020"
+    },
+    {
+        "doi": "10.1371\/journal.pone.0187691",
+        "links": "http:\/\/europepmc.org\/articles\/PMC5673183?pdf=render",
+        "abstract": "We examined openly shared substance-related tweets to estimate prevalent sentiment around substance use and identify popular substance use activities. Additionally, we investigated associations between substance-related tweets and business characteristics and demographics at the zip code level.A total of 79,848,992 tweets were collected from 48 states in the continental United States from April 2015-March 2016 through the Twitter API, of which 688,757 were identified as being related to substance use. We implemented a machine learning algorithm (maximum entropy text classifier) to estimate sentiment score for each tweet. Zip code level summaries of substance use tweets were created and merged with the 2013 Zip Code Business Patterns and 2010 US Census Data.Quality control analyses with a random subset of tweets yielded excellent agreement rates between computer generated and manually generated labels: 97%, 88%, 86%, 75% for underage engagement in substance use, alcohol, drug, and smoking tweets, respectively. Overall, 34.1% of all substance-related tweets were classified as happy. Alcohol was the most frequently tweeted substance, followed by marijuana. Regression results suggested more convenience stores in a zip code were associated with higher percentages of tweets about alcohol. Larger zip code population size and higher percentages of African Americans and Hispanics were associated with fewer tweets about substance use and underage engagement. Zip code economic disadvantage was associated with fewer alcohol tweets but more drug tweets.The patterns in substance use mentions on Twitter differ by zip code economic and demographic characteristics. Online discussions have great potential to glorify and normalize risky behaviors. Health promotion and underage substance prevention efforts may include interactive social media campaigns to counter the social modeling of risky behaviors.",
+        "title": "National substance use patterns on Twitter.",
+        "authors": [
+            "Hsien-Wen Meng",
+            "Suraj Kath",
+            "Dapeng Li",
+            "Quynh C Nguyen"
+        ],
+        "year": "2017"
+    },
+    {
+        "doi": "10.1051\/epjconf\/202024510003",
+        "links": "https:\/\/www.epj-conferences.org\/articles\/epjconf\/pdf\/2020\/21\/epjconf_chep2020_10003.pdf",
+        "abstract": "The reconstruction of trajectories of the charged particles in the tracking detectors of high energy physics (HEP) experiments is one of the most difficult and complex tasks of event reconstruction at particle colliders. As pattern recognition algorithms exhibit combinatorial scaling to high track multiplicities, they become the largest contributor to the CPU consumption within event reconstruction, particularly at current and future hadron colliders such as the LHC, HL-LHC and FCC-hh. Current algorithms provide an extremely high standard of physics and computing performance and have been tested on billions of simulated and recorded data events. However, most algorithms date back to more than 20 years ago and maintaining them has become increasingly challenging. In addition, they are challenging to adapt to modern programming paradigms and parallel architectures.\nActs is based on the well-tested and highly functioning components of LHC track reconstruction algorithms, implemented with modern software concepts and inherently designed for parallel architectures. Multithreading becomes increasingly important to balance the memory usage per CPU core. However, a fully multithreaded event processing framework blurs the clear border between events, which has in the past often been used as a clearly defined validity boundary for event conditions. Acts is equipped with a full contextual conditions concept that allows to run concurrent track reconstruction even in case of multiple detector alignments, conditions or varying magnetic field being processed at the same time. It provides an experiment and, in particular, framework-independent software toolkit and light-weight, highly optimised event data model for track reconstruction. Particular care is given to thread safety and data locality. It is designed as a toolbox that allows to implement and extend widely known pattern recognition algorithms, and in addition suitable for algorithm templating and R&D. Acts has been used as the fast simulation engine for the Tracking Machine Learning (TrackML) Challenge, and will provide reference implementation of several submitted solution programs of the two phases of the challenge.",
+        "title": "The Acts project: track reconstruction software for HL-LHC and beyond",
+        "authors": [
+            "Gessinger Paul",
+            "Grasland Hadrien",
+            "Gray Heather",
+            "Kiehn Moritz",
+            "Klimpel Fabian",
+            "Langenberg Robert",
+            "Salzburger Andreas",
+            "Schlag Bastian",
+            "Zhang Jin",
+            "Ai Xiaocong"
+        ],
+        "year": "2020"
+    },
+    {
+        "doi": "",
+        "links": "https:\/\/businessperspectives.org\/images\/pdf\/applications\/publishing\/templates\/article\/assets\/4110\/imfi_en_2011_02_Aktan.pdf",
+        "abstract": "",
+        "title": "Application of machine learning algorithms for business failure prediction",
+        "authors": [
+            "Sinan Aktan"
+        ],
+        "year": "2011"
+    },
+    {
+        "doi": "10.1371\/journal.pone.0197242",
+        "links": "http:\/\/europepmc.org\/articles\/PMC5945052?pdf=render",
+        "abstract": "Although mice are commonly used to study different aspects of fatty liver disease, currently there are no validated fully automated methods to assess steatosis in mice. Accurate detection of macro- and microsteatosis in murine models of fatty liver disease is important in studying disease pathogenesis and detecting potential hepatotoxic signature during drug development. Further, precise quantification of macrosteatosis is essential for quantifying effects of therapies. Here, we develop and validate the performance of automated classifiers built using image processing and machine learning methods for detection of macro- and microsteatosis in murine fatty liver disease and study the correlation of automated quantification of macrosteatosis with expert pathologist's semi-quantitative grades. The analysis is performed on digital images of 27 Hematoxylin & Eosin stained murine liver biopsy samples. An expert liver pathologist scored the amount of macrosteatosis and also annotated macro- and microsteatosis lesions on the biopsy images using a web-application. Using these annotations, supervised machine learning and image processing techniques, we created classifiers to detect macro- and microsteatosis. For macrosteatosis prediction, the model's precision, sensitivity and area under the receiver operator characteristic (AUROC) were 94.2%, 95%, 99.1% respectively. When correlated with pathologist's semi-quantitative grade of steatosis, the model fits with a coefficient of determination value of 0.905. For microsteatosis prediction, the model has precision, sensitivity and AUROC of 79.2%, 77%, 78.1% respectively. Validation by the expert pathologist of classifier's predictions made on unseen images of biopsy samples showed 100% and 63% accuracy for macro- and microsteatosis, respectively. This novel work demonstrates that fully automated assessment of steatosis is feasible in murine liver biopsies images. Our classifier has excellent sensitivity and accuracy for detection of macrosteatosis in murine fatty liver disease.",
+        "title": "Automated assessment of steatosis in murine fatty liver.",
+        "authors": [
+            "Deepak Sethunath",
+            "Siripriya Morusu",
+            "Mihran Tuceryan",
+            "Oscar W Cummings",
+            "Hao Zhang",
+            "Xiao-Ming Yin",
+            "Scott Vanderbeck",
+            "Naga Chalasani",
+            "Samer Gawrieh"
+        ],
+        "year": "2018"
+    },
+    {
+        "doi": "10.1051\/e3sconf\/202449201001",
+        "links": "https:\/\/www.e3s-conferences.org\/articles\/e3sconf\/pdf\/2024\/22\/e3sconf_i2cnp2024_01001.pdf",
+        "abstract": "Irrigation and the strategic planning thereof play a pivotal role in diverse hydrological inquiries, with reference evapotranspiration (ETo) standing as a paramount variable within this domain. While the equation (FAO-56 PM)is extensively employed for (ETo)estimation, its dependence on numerous weather datas such as solar radiation, temperature, relative humidity, extraterrestrial radiation and wind speed, introduces inherent constraints, the remote computation necessitates a substantial array of sensors, thereby incurring considerable expenses. To surmount this challenge, artificial intelligence methodologies, encompassing various machine learning (ML) models, are harnessed for ETo estimation, requiring only minimal parameters.This investigation scrutinizes the effectiveness of alternative equations (Hargreaves-Samani, Romannenko, Jensen-Haise, ASCE_PM) vis-\u00e0-vis (ML) models such as Xgboost,Support Vector Machine (SVM), and Random Forest (RF) in the estimation of ETo across the Meknes region, utilizing diverse permutations of the four measured variables. The study employs an extensive array of hyperparameters in two distinct scenarios: (i) randomization of all data, and (ii) training on one station while validating on another. All methodologies employed in this study yield satisfactory outcomes when juxtaposed against empirical models reliant on minimal meteorological data.",
+        "title": "Improvement the estimation of reference evapotranspiration by combining different types of meteorological data Using machine learning models",
+        "authors": [
+            "Ba-ichou Ayoub",
+            "Zegoumou Abderrahim",
+            "Benhlima Said",
+            "Bekr My Ali"
+        ],
+        "year": "2024"
+    }
+]
