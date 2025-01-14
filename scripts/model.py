@@ -103,7 +103,7 @@ if __name__ == "__main__":
     document_collection = vector_database.document_collection
 
     # model_client
-    model_client = OpenAI(api_key="sk-64149cffb9534973ba492c2d9a9e1dda", base_url="https://api.deepseek.com")
+    model_client = OpenAI(api_key="", base_url="https://api.deepseek.com")
 
     # prompt template
     prompt_template = """
