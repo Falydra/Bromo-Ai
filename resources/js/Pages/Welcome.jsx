@@ -33,17 +33,52 @@ export default function LandingPage() {
 
             // Add bot response to chat
             if (res.ok) {
-                setChat((prevChat) => [...prevChat, { role: 'bot', text: data.response }]);
+                if (data.resultSize === 0) {
+                    setChat((prevChat) => [...prevChat, { role: 'bot', text: data.response.outro }]);
+                } else {
+                    setChat((prevChat) => [...prevChat, { role: 'bot', text: data.response.introduction }]);
+                    console.log(typeof(data.response.results))
+                    Object.entries(data.response.results).forEach(([id, result]) => {
+                        setChat((prevChat) => [...prevChat, {
+                            role: 'bot',
+                            text: `${result.summary} ${result.link}` }]);
+                        })
+                    setChat((prevChat) => [...prevChat, { role: 'bot', text: data.response.outro }]);
+                }
+                setChat((prevChat) => [...prevChat, { role: 'bot', text: data.time }]);
+                console.log(data);
             } else {
                 // setChat((prevChat) => [...prevChat, { role: 'bot', text: 'Something went wrong' }]);
+                console.log(data.data);
                 setChat((prevChat) => [...prevChat, { role: 'bot', text: data.error }]);
             }
         } catch (error) {
             setChat((prevChat) => [...prevChat, { role: 'bot', text: 'Error connecting to the server.' }]);
+            console.log(error)
         } finally {
             setMessage('');
         }
     };
+
+    const detectURL = (text) => {
+        if (typeof text !== 'string') {
+            return text;
+        }
+
+        // const urlRegex = /^(http:\/\/www\.|https:\/\/www\.|http:\/\/|https:\/\/)?[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$/;
+        const urlRegex = /(https?:\/\/[^\s]+)/g;
+        return text.split(urlRegex).map((part, index) => {
+            if (urlRegex.test(part)) {
+                return (
+                    <a key={index} href={part} target="_blank" className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600"
+                    rel="noopener noreferrer">
+                        {part}
+                    </a>
+                );
+            }
+            return part;
+        })
+    }
 
     return (
         <div className='flex w-full h-screen justify-center items-center flex-row bg-slate-800'>
@@ -90,7 +125,7 @@ export default function LandingPage() {
                                     msg.role === 'user' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-black'
                                 } max-w-xs`}
                             >
-                                {msg.text}
+                                {detectURL(msg.text)}
                             </div>
                         </div>
                     ))}

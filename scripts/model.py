@@ -154,8 +154,8 @@ if __name__ == "__main__":
                 ...
             """
 
-    # query = input("query: ")
-    query = sys.argv[1]
+    query = "what is machine learning?"
+    # query = sys.argv[1]
     context = getFinalContext(document_collection, title_collection, query, 1.5)
     prompt_with_context = createPrompt(f"{query} {constraints}", context, prompt_template, format, f"{constraints} {context_handling}")
 
