@@ -75,8 +75,8 @@ export default function LandingPage() {
                     <div className='flex flex-col items-center w-5/6 h-3/4 overflow-y-auto bg-transparent rounded-lg p-4 mt-4'>
                     {/* Chat messages */}
 
-                    
-                    
+
+
 
                    {chat.map((msg, index) => (
                         <div
