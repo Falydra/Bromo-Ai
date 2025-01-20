@@ -42,7 +42,6 @@ class DOAJService {
         }
 
         // save to new json
-        // $outputPath = storage_path("{$this->outputPath}/article_data.json");
         $outputPath = base_path("{$this->outputPath}/article_data.json");
 
         // check directory and the json exists before writing new file
@@ -52,6 +51,8 @@ class DOAJService {
 
         File::put($outputPath, json_encode($extractedData, JSON_PRETTY_PRINT));
 
+        // $download = Http::timeout(300)->get(route('article.download'));
+
         return response()->json([
             'success' => 'true',
             'message' => 'Data extracted successfully',
@@ -59,20 +60,22 @@ class DOAJService {
         ]);
     }
 
-    public function searchArticle($search_query, $pageSize=50, $page=1) {
-        $keywords = Str::of($search_query)->explode("; ");
-        $query = '(' . $keywords->map(fn($word) => "bibjson.\*:\"$word\"")->join(' OR ') . ')';
-        $query = "{$query} AND bibjson.link.url:\".pdf\"";
-        // $query = "{$query} AND bibjson.link.url:\"ejournal.undip.ac.id\"";
+    public function searchArticle($search_query, $pageSize=50, $page=2) {
+        // for ($i=1; $i<=1; $i++) {
+            $keywords = Str::of($search_query)->explode("; ");
+            $query = '(' . $keywords->map(fn($word) => "bibjson.\*:\"$word\"")->join(' OR ') . ')';
+            $query = "{$query} AND bibjson.link.url:\".pdf\"";
+            // $query = "{$query} AND bibjson.link.url:\"ejournal.undip.ac.id\"";
 
-        $response = Http::get(
-            "{$this->baseUrl}/search/articles/{$query}",
-            ["pageSize" => $pageSize, "page" => $page]
-        );
+            $response = Http::get(
+                "{$this->baseUrl}/search/articles/{$query}",
+                ["pageSize" => $pageSize, "page" => $page]
+            );
 
-        if ($response->successful()) {
-            return $this->extractData($response->json());
-        }
+            if ($response->successful()) {
+                $extract = $this->extractData($response->json());
+            }
+        // }
 
         return null;
     }
