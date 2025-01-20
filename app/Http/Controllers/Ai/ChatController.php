@@ -10,11 +10,12 @@ use Illuminate\Support\Facades\Http;
 use Symfony\Component\Process\Process;
 
 class ChatController extends Controller {
-    protected $baseUrl;
+    protected $pythonServer;
 
     public function __construct() {
-        $this->baseUrl = env('BROMO_MODEL_URL');
+        $this->pythonServer = env('PYTHON_MODEL_URL');
     }
+
     public function askQuestion(Request $request) {
         // Validate the incoming request
         $request->validate([
@@ -26,7 +27,7 @@ class ChatController extends Controller {
         try {
             $response = Http::withHeaders([
                 "Content-Type" => "application/json",
-            ])->post("{$this->baseUrl}/ask", [
+            ])->post("{$this->pythonServer}/ask", [
                 "query" => $question,
             ]);
 
@@ -43,24 +44,5 @@ class ChatController extends Controller {
                 'error' => $e->getMessage(),
             ], 500);
         }
-
-        // try {
-        //     // $scriptPath = base_path('scripts/model.py');
-        //     $scriptPath = base_path('scripts/test.py');
-        //     $pythonPath = base_path('scripts/venv/Scripts/python.exe');
-        //     $process = new Process([$pythonPath, $scriptPath, escapeshellarg($question)]);
-        //     $process->setWorkingDirectory(base_path('scripts'));
-        //     $process->run();
-
-        //     if (!$process->isSuccessful()) {
-        //         return response()->json(['error' => $process->getErrorOutput()], 500);
-        //     }
-
-        //     $output = $process->getOutput();
-
-        //     return response()->json(['response' => $output]);
-        // } catch (\Exception $e) {
-        //     return response()->json(['error' => $e->getMessage()], 500);
-        // }
     }
 }

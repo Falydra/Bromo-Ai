@@ -23,8 +23,24 @@ Route::get('/dashboard', function () {
 
 Route::post('/chat', [ChatController::class, 'askQuestion'])->name('bromo.chat');
 
-Route::get('/articles/search', [ArticleController::class, 'searchArticle'])->name('article.search');
-Route::get('/articles/download', [ArticleController::class, 'downloadArticle'])->name('article.download');
+Route::get('/test/chat', function() {
+    return Inertia::render('Test', [
+        'canLogin' => Route::has('login'),
+        'laravelVersion' => Application::VERSION,
+        'phpVersion' => PHP_VERSION,
+    ]);
+});
+
+Route::get('/articles/search', function () {
+    return Inertia::render('Search', [
+        'canLogin' => Route::has('login'),
+        'canRegister' => Route::has('register'),
+        'laravelVersion' => Application::VERSION,
+        'phpVersion' => PHP_VERSION,
+    ]);
+})->name('article.search.get');
+Route::post('/articles/search', [ArticleController::class, 'searchArticle'])->name('article.search.post');
+Route::post('/articles/download', [ArticleController::class, 'downloadArticle'])->name('article.download');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
