@@ -4,25 +4,26 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Services\DOAJService;
+use Illuminate\Support\Facades\Http;
 use Symfony\Component\Process\Process;
 
 class ArticleController extends Controller {
     protected $doajService;
-    protected $pythonPath;
+    protected $pythonServer;
 
     public function __construct(DOAJService $doajService) {
         $this->doajService = $doajService;
-        $this->pythonPath = base_path('scripts/venv/Scripts/python.exe');
+        $this->pythonServer = env('PYTHON_MODEL_URL');
     }
 
     public function searchArticle(Request $request) {
-        set_time_limit(900);
         $query = $request->input('query');
+        $page = $request->input('page');
 
-        $articles = $this->doajService->searchArticle($query);
+        $articles = $this->doajService->searchArticle($query, 10, 1, 1);
 
         if ($articles) {
-            return response()->json($articles);
+            return $articles;
         }
 
         return response()->json([
@@ -31,18 +32,34 @@ class ArticleController extends Controller {
     }
 
     public function downloadArticle(Request $request) {
-        set_time_limit(300);
-        $scriptPath = base_path('scripts/download_article.py');
-        $process = new Process([$this->pythonPath, $scriptPath]);
-        $process->run();
+        $request->validate([
+            'articleData' => 'required|json',
+        ]);
 
-        if (!$process->isSuccessful()) {
-            return response()->json(['error' => $process->getErrorOutput()], 500);
+        $articleData = $request->articleData;
+
+        try {
+            $response = Http::withHeaders([
+                'Content-Type' => 'application/json',
+            ])->post("{$this->pythonServer}/download", [
+                "articleData" => $articleData,
+            ]);
+
+            $responseData = $response->json();
+
+            return response()->json([
+                'success' => true,
+                'message' => 'Successfully downloaded articles',
+                'data' => $responseData,
+            ], 200);
+        } catch (\Exception $e) {
+            return response()->json([
+                'error' => $e
+            ]);
         }
 
         return response()->json([
-            'success' => true,
-            'message' => 'Successfully downloaded articles',
-        ], 200);
+            "error" => "500 Internal Server Error",
+        ]);
     }
 }

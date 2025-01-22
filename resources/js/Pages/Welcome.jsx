@@ -34,7 +34,7 @@ export default function LandingPage() {
             // Add bot response to chat
             if (res.ok) {
                 if (data.resultSize === 0) {
-                    setChat((prevChat) => [...prevChat, { role: 'bot', text: data.response.outro }]);
+                    setChat((prevChat) => [...prevChat, { role: 'bot', text: data.response.introduction }]);
                 } else {
                     setChat((prevChat) => [...prevChat, { role: 'bot', text: data.response.introduction }]);
                     console.log(typeof(data.response.results))
@@ -47,6 +47,7 @@ export default function LandingPage() {
                 }
                 setChat((prevChat) => [...prevChat, { role: 'bot', text: data.time }]);
                 console.log(data);
+                console.log(chat)
             } else {
                 // setChat((prevChat) => [...prevChat, { role: 'bot', text: 'Something went wrong' }]);
                 console.log(data.data);

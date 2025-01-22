@@ -2,6 +2,7 @@
 
 namespace App\Services;
 
+use App\Jobs\ProcessArticles;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\File;
@@ -9,14 +10,15 @@ use Illuminate\Support\Facades\Http;
 
 class DOAJService {
     protected $baseUrl;
+    protected $pythonServer;
     protected $apiKey;
     protected $outputPath;
 
     public function __construct() {
         $this->baseUrl = env('DOAJ_API_URL');
         $this->apiKey = env('DOAJ_API_KEY');
-        // $this->outputPath = 'app/temp'; // for permanent storage, use 'app/json'
-        $this->outputPath = 'scripts';
+        $this->outputPath = 'app/temp'; // for permanent storage, use 'app/json'
+        $this->pythonServer = env('PYTHON_MODEL_URL');
     }
 
     public function extractData($data) {
@@ -49,47 +51,32 @@ class DOAJService {
             File::makeDirectory(dirname($outputPath), 0755, true);
         }
 
-        File::put($outputPath, json_encode($extractedData, JSON_PRETTY_PRINT));
+        File::put($outputPath, json_encode($extractedData, JSON_PRETTY_PRINT)); // debug purposes
 
-        // $download = Http::timeout(300)->get(route('article.download'));
-
-        return response()->json([
-            'success' => 'true',
-            'message' => 'Data extracted successfully',
-            'file' => $outputPath,
-        ]);
+        return $extractedData;
     }
 
-    public function searchArticle($search_query, $pageSize=50, $page=2) {
-        // for ($i=1; $i<=1; $i++) {
-            $keywords = Str::of($search_query)->explode("; ");
-            $query = '(' . $keywords->map(fn($word) => "bibjson.\*:\"$word\"")->join(' OR ') . ')';
-            $query = "{$query} AND bibjson.link.url:\".pdf\"";
-            // $query = "{$query} AND bibjson.link.url:\"ejournal.undip.ac.id\"";
+    public function searchArticle($searchQuery, $pageSize=10, $page=1, $pageAmount=1) {
+        $keywords = Str::of($searchQuery)->explode("; ");
+        $query = '(' . $keywords->map(fn($word) => "bibjson.\*:\"$word\"")->join(' OR ') . ')';
+        $query = "{$query} AND bibjson.link.url:\".pdf\"";
 
-            $response = Http::get(
-                "{$this->baseUrl}/search/articles/{$query}",
-                ["pageSize" => $pageSize, "page" => $page]
-            );
+        for ($i=$page; $i<$page+$pageAmount; $i++) {
+            ProcessArticles::dispatch($query, $pageSize, $i)->delay(now()->addSeconds(5));
+        }
 
-            if ($response->successful()) {
-                $extract = $this->extractData($response->json());
-            }
-        // }
-
-        return null;
-    }
-
-    public function searchJournal($search_query, $pageSize=5) {
         $response = Http::get(
-            "{$this->baseUrl}/search/journals/{$search_query}",
+            "{$this->baseUrl}/search/articles/{$query}",
             ["pageSize" => $pageSize],
         );
 
         if ($response->successful()) {
-            return $response->json();
+            $extractedData = $this->extractData($response->json());
+            return $extractedData;
         }
 
-        return null;
+        return response()->json([
+            "error" => "internal server error"
+        ], 500);
     }
 }
