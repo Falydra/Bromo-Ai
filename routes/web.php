@@ -31,7 +31,7 @@ Route::get('/test/chat', function() {
     ]);
 });
 
-Route::get('/articles/search', function () {
+Route::get('/test/search', function () {
     return Inertia::render('Search', [
         'canLogin' => Route::has('login'),
         'canRegister' => Route::has('register'),
@@ -39,8 +39,15 @@ Route::get('/articles/search', function () {
         'phpVersion' => PHP_VERSION,
     ]);
 })->name('article.search.get');
-Route::post('/articles/search', [ArticleController::class, 'searchArticle'])->name('article.search.post');
-Route::post('/articles/download', [ArticleController::class, 'downloadArticle'])->name('article.download');
+Route::post('/test/search', [ArticleController::class, 'searchArticle'])->name('article.search.post');
+
+Route::get('/test/download', function () {
+    return Inertia::render('Download', [
+        'laravelVersion' => Application::VERSION,
+        'phpVersion' => PHP_VERSION,
+    ]);
+})->name('article.download.get');
+Route::post('/test/download', [ArticleController::class, 'downloadArticle'])->name('article.download');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

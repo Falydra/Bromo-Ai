@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Jobs\ProcessArticles;
 use Illuminate\Http\Request;
 use App\Services\DOAJService;
 use Illuminate\Support\Facades\Http;
@@ -20,7 +21,7 @@ class ArticleController extends Controller {
         $query = $request->input('query');
         $page = $request->input('page');
 
-        $articles = $this->doajService->searchArticle($query, 10, 1, 1);
+        $articles = $this->doajService->searchArticle($query, 10, 1, 10);
 
         if ($articles) {
             return $articles;
@@ -33,33 +34,28 @@ class ArticleController extends Controller {
 
     public function downloadArticle(Request $request) {
         $request->validate([
-            'articleData' => 'required|json',
+            'settings' => 'required',
+            'queries' => 'required',
         ]);
 
-        $articleData = $request->articleData;
+        $settings = $request->settings;
+        $queries = $request->queries;
 
-        try {
-            $response = Http::withHeaders([
-                'Content-Type' => 'application/json',
-            ])->post("{$this->pythonServer}/download", [
-                "articleData" => $articleData,
-            ]);
-
-            $responseData = $response->json();
-
-            return response()->json([
-                'success' => true,
-                'message' => 'Successfully downloaded articles',
-                'data' => $responseData,
-            ], 200);
-        } catch (\Exception $e) {
-            return response()->json([
-                'error' => $e
-            ]);
+        $i = 0;
+        foreach ($queries as $query) {
+            $articles = $this->doajService->downloadArticle(
+                $query["query"],
+                $settings["pageSize"],
+                $settings["pageAmount"],
+                $settings["pageStart"],
+            );
+            $i++;
         }
 
         return response()->json([
-            "error" => "500 Internal Server Error",
+            "settings" => $settings,
+            "queries" => $queries,
+            "message" => "Successfully Processing the Download. You can close the page now {$i}"
         ]);
     }
 }

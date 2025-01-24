@@ -25,7 +25,8 @@ class ChatController extends Controller {
         $question = $request->input('question');
 
         try {
-            $response = Http::withHeaders([
+            $response = Http::timeout(300)
+            ->withHeaders([
                 "Content-Type" => "application/json",
             ])->post("{$this->pythonServer}/ask", [
                 "query" => $question,
