@@ -61,10 +61,6 @@ class DOAJService {
         $query = '(' . $keywords->map(fn($word) => "bibjson.\*:\"$word\"")->join(' OR ') . ')';
         $query = "{$query} AND bibjson.link.url:\".pdf\"";
 
-        for ($i=$page; $i<$page+$pageAmount; $i++) {
-            ProcessArticles::dispatch($query, $pageSize, $i)->delay(now()->addSeconds(5));
-        }
-
         $response = Http::get(
             "{$this->baseUrl}/search/articles/{$query}",
             ["pageSize" => $pageSize],
@@ -78,5 +74,19 @@ class DOAJService {
         return response()->json([
             "error" => "internal server error"
         ], 500);
+    }
+
+    public function downloadArticle($searchQuery, $pageSize=10, $pageAmount=10, $pageStart) {
+        $keywords = Str::of($searchQuery)->explode("; ");
+        $query = '(' . $keywords->map(fn($word) => "bibjson.\*:\"$word\"")->join(' OR ') . ')';
+        $query = "{$query} AND bibjson.link.url:\".pdf\"";
+
+        for ($i=$pageStart; $i<$pageStart+$pageAmount; $i++) {
+            ProcessArticles::dispatch($query, $pageSize, $i);
+        }
+
+        return response()->json([
+            "status" => "200",
+        ], 200);
     }
 }
