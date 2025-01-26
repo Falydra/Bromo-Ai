@@ -1,0 +1,131 @@
+[
+    {
+        "doi": "10.21608\/jesaun.2024.326709.1374",
+        "links": "https:\/\/jesaun.journals.ekb.eg\/article_393447_9546e355affffebb2c5da930aaeba9a0.pdf",
+        "abstract": "Agriculture is a vital component of Egypt's economy; therefore, using Digital Elevation Models (DEMs) in agricultural planning in Egypt has significant benefits regarding water management, site appropriateness assessment, flood risk mitigation, and infrastructure construction. It is also essential for planners to make more informed decisions, optimize resource allocation, and support sustainable farming practices. This research paper investigates the accuracy of obtaining DEM data from four free global models (STRM30, ALOS30, COP30, and TanDEM-X90). The global DEM data has been compared to an actual GNSS-RTK DEM data surveyed onsite for two agricultural block areas in Aswan, the southern Government of Egypt. The two blocks are a part of a national project. For Block I and II, the RMSE of the Model STRM30 was 2.92 m and 3.59 m, respectively, indicating a poorer solution. Regarding accuracy, the ALOS30 model ranks third, reporting an RMSE of 2.58 m for block II and 3.30 m for block I. COP30 has an RMSE value of 1.06 m for blocks I and II and.91 m overall. TanDEM-X90 is the most accurate model in this investigation; block I provided an RMSE of 0.90 m with an SD of 0.58 m (SD95% = 0.38 m). After removing the anomalies, the model's stated RMSE for block II was 0.34 m, with an SD value of 0.62 m and 1.03 m. According to the classification using machine learning algorithms, with an accuracy of 84.7% for block I and 85% for block II, TanDEM-X90 is the best solution.",
+        "title": "Evaluation of the Applications of using Global free Digital Elevation Models and GNSS-RTK data for Agricultural purposes in Egypt using Machine Learning",
+        "authors": [
+            "Ashraf abdallah",
+            "Bara&#039; Al-MISTAREHI",
+            "Amir SHTAYAT"
+        ],
+        "year": "2025"
+    },
+    {
+        "doi": "10.1051\/shsconf\/202214001016",
+        "links": "https:\/\/www.shs-conferences.org\/articles\/shsconf\/pdf\/2022\/10\/shsconf_iteme2022_01016.pdf",
+        "abstract": "Starting from the background of the outbreak of New Coronavirus, in order to realize the function of automatically identifying the required items by machine, the support vector machine algorithm in the neural network and the traditional computer vision algorithm opencv were used. The software developed by pycharm and python programming language was used to compile automatically a software to identify whether the required items were filled out. And on the basis of completing the software, it is connected to the embedded device high-speed clapper. It is applied to Fuzhou Customs to help the customs staff review the health form and declaration card of inbound and outbound passengers, which not only saves the time of staff and passengers, but also contributes to the prevention and control of epidemic situation to a certain extent.",
+        "title": "Research on recognizing required items based on opencv and machine learning",
+        "authors": [
+            "Ma Qingyun",
+            "Huang Xubin"
+        ],
+        "year": "2022"
+    },
+    {
+        "doi": "10.5194\/os-18-1491-2022",
+        "links": "https:\/\/os.copernicus.org\/articles\/18\/1491\/2022\/os-18-1491-2022.pdf",
+        "abstract": "<p>The eastern Mediterranean surface circulation is highly energetic and composed of structures interacting stochastically. However, some main features are still debated, and the behavior of some fine-scale dynamics and their role in shaping the general circulation is yet unknown. In the following paper, we use an unsupervised neural network clustering method to analyze the long-term variability of the different mesoscale structures. We decompose 26 years of altimetric data into clusters reflecting different circulation patterns of weak and strong flows with either strain or vortex-dominated velocities. The vortex-dominated cluster is more persistent in the western part of the basin, which is more active than the eastern part due to the strong flow along the coast, interacting with the extended bathymetry and engendering continuous instabilities. The cluster that reflects a weak flow dominated the middle of the basin, including the Mid-Mediterranean Jet (MMJ) pathway. However, the temporal analysis shows a frequent and intermittent occurrence of a strong flow in the middle of the basin, which could explain the previous contradictory assessment of MMJ existence using in-situ observations. Moreover, we prove that the Levantine Sea is becoming more and more energetic as the activity of the main mesoscale features is showing a positive trend.<\/p>",
+        "title": "Surface circulation properties in the eastern Mediterranean emphasized using machine learning methods",
+        "authors": [
+            "G. Baaklini",
+            "G. Baaklini",
+            "R. El Hourany",
+            "M. Fakhri",
+            "J. Brajard",
+            "L. Issa",
+            "G. Fifani",
+            "G. Fifani",
+            "L. Mortier"
+        ],
+        "year": "2022"
+    },
+    {
+        "doi": "10.4204\/EPTCS.306.16",
+        "links": "http:\/\/arxiv.org\/pdf\/1909.08235v1",
+        "abstract": "In this work we design a narrative understanding tool Text2ALM. This tool uses an action language ALM to perform inferences on complex interactions of events described in narratives. The methodology used to implement the Text2ALM system was originally outlined by Lierler, Inclezan, and Gelfond (2017) via a manual process of converting a narrative to an ALM model. It relies on a conglomeration of resources and techniques from two distinct fields of artificial intelligence, namely, natural language processing and knowledge representation and reasoning. The effectiveness of system Text2ALM is measured by its ability to correctly answer questions from the bAbI tasks published by Facebook Research in 2015. This tool matched or exceeded the performance of state-of-the-art machine learning methods in six of the seven tested tasks. We also illustrate that the Text2ALM approach generalizes to a broader spectrum of narratives.",
+        "title": "Information Extraction Tool Text2ALM: From Narratives to Action Language System Descriptions",
+        "authors": [
+            "Craig Olson",
+            "Yuliya Lierler"
+        ],
+        "year": "2019"
+    },
+    {
+        "doi": "10.1590\/0370-44672023770071",
+        "links": "http:\/\/www.scielo.br\/scielo.php?script=sci_arttext&pid=S2448-167X2024000201404&lng=en&tlng=en",
+        "abstract": "Abstract The modeling of mineral deposits has been improved over the years with the incorporation of mineralogical and metallurgical information obtained from drilling samples that make up the pillars for the construction of resource models. However, sampling data is being made available in large quantities, causing current databases to grow exponentially. The use of machine learning (ML) algorithms has been applied to deal with multidimensional data problems. Principal component analysis (PCA) is a multivariate analysis (MA) technique whose aim is to reduce the dimension of multivariate data. Studies show that results obtained with the reduction of variables were satisfactory in different areas of activity. The purpose of this article is to test variable selection criteria using PCA for geometallurgical data and to check the feasibility of the technique for simplifying variable types and defining typological domains.",
+        "title": "Evaluation of PCA with variable selection for cluster typological domains",
+        "authors": [
+            "Silv\u00e2nia Alves Braga de Castro",
+            "Andr\u00e9 Carlos Silva"
+        ],
+        "year": "2024"
+    },
+    {
+        "doi": "https:\/\/doi.org\/10.46222\/ajhtl.19770720.256",
+        "links": "https:\/\/www.ajhtl.com\/uploads\/7\/1\/6\/3\/7163688\/article_16_11_2_770-780.pdf",
+        "abstract": "The purpose of the current study was to determine factors affecting tourism demand using machine learning techniques. The results of different linear regression and random forest models on both the train and test sets were compared using RMSE and R2\r\n. The random forest model outperformed the linear regression model on both the\r\ntraining and test sets. Climate, consumer price index, political stability, distance, promotion expenditure, and region of residence are all important factors in explaining total arrivals. The findings of the current research, therefore, provide additional evidence for the effectiveness of the AI based models to improve tourism demand forecasting compared to linear regression models.\r\n",
+        "title": "Determinants of Tourism Demand Using Machine Learning Techniques",
+        "authors": [
+            "Musonera Abdou",
+            "Edouard Musabanganji ",
+            "Herman Musahara"
+        ],
+        "year": "2022"
+    },
+    {
+        "doi": "10.7717\/peerj-cs.1677",
+        "links": "https:\/\/peerj.com\/articles\/cs-1677.pdf",
+        "abstract": "Dependence on the internet and computer programs demonstrates the significance of computer programs in our day-to-day lives. Such demands motivate malware developers to create more malware, both in terms of quantity and variety. Researchers are constantly faced with hurdles while attempting to protect themselves from potential hazards and risks due to malware authors\u2019 usage of code obfuscation techniques. Metamorphic and polymorphic variations are easily able to elude the widely utilized signature-based detection procedures. Researchers are more interested in deep learning approaches than machine learning techniques to analyze the behavior of such a vast number of virus variants. Researchers have been drawn to the categorization of malware within itself in addition to the classification of malware against benign programs to examine the behavioral differences between them. In order to investigate the relationship between the application programming interface (API) calls throughout API sequences and classify them, this work uses the one-dimensional convolutional neural network (1D-CNN) model to solve a multiclass classification problem. On API sequences, feature vectors for distinctive APIs are created using the Word2Vec word embedding approach and the skip-gram model. The one-vs.-rest approach is used to train 1D-CNN models to categorize malware, and all of them are then combined with a suggested ModifiedSoftVoting algorithm to improve classification. On the open benchmark dataset Mal-API-2019, the suggested ensembled 1D-CNN architecture captures improved evaluation scores with an accuracy of 0.90, a weighted average F1-score of 0.90, and an AUC score of more than 0.96 for all classes of malware.",
+        "title": "An ensemble approach for imbalanced multiclass malware classification using 1D-CNN",
+        "authors": [
+            "Binayak Panda",
+            "Sudhanshu Shekhar Bisoyi",
+            "Sidhanta Panigrahy"
+        ],
+        "year": "2023"
+    },
+    {
+        "doi": "10.5194\/isprs-archives-XLIII-B2-2022-485-2022",
+        "links": "https:\/\/www.int-arch-photogramm-remote-sens-spatial-inf-sci.net\/XLIII-B2-2022\/485\/2022\/isprs-archives-XLIII-B2-2022-485-2022.pdf",
+        "abstract": "The use of deep machine learning methods for semantic classification of city mesh models is one of the current trends in geoscience development. Thanks to the thriving development of Convolutional Neural Networks (CNNs) it is now achievable to conduct fully automated process of building aforementioned 3D model by means of photogrammetric techniques and supplement it with additional semantic information obtained by Artificial Intelligence (AI) algorithms. In order to guarantee the comprehensiveness of said information it is essential to use an extensive range of 3D data including oblique aerial imagery and aerial laser scanning (ALS). Such comprehensive 3D mesh models may be later implemented in many Digital Twin class solutions additionally supported with modern GIS systems and its algorithms. To proof the validity of this thesis, the article showcases results of research conducted using deep learning based solutions tested on two datasets - real-world data in the form of oblique aerial images and ALS point clouds acquired in Bordeaux, France using novel Leica CityMapper-1 multisensoral system and large-scale dataset from SUM: A Benchmark Dataset of Semantic Urban Meshes. Both subalgorithms make use of CNNs as its core-feature. To perform accurate classification of oblique aerial scenes PSP-Net architecture accelerated by techniques of transfer learning has been used. Second algorithm destined for ALS point clouds utilizes CNN as well, but in this case implementation is based on proprietary architecture. The results of the experiments demonstrate that the utilizing these two mutually complementary solutions to extract new semantic information for city mesh models in proposed manner compared with the state-of-the-art methods achieves competitive classification performance.",
+        "title": "SEMANTIC URBAN MESH SEGMENTATION BASED ON AERIAL OBLIQUE IMAGES AND POINT CLOUDS USING DEEP LEARNING",
+        "authors": [
+            "\u0141. Wilk",
+            "\u0141. Wilk",
+            "D. Mielczarek",
+            "W. Ostrowski",
+            "W. Dominik",
+            "J. Krawczyk"
+        ],
+        "year": "2022"
+    },
+    {
+        "doi": "10.22105\/riej.2020.228212.1131",
+        "links": "http:\/\/www.riejournal.com\/article_107191_87ccc2576ef91a103e373a5fae2fae18.pdf",
+        "abstract": "Nowadays, the control of the traffic in the urban roads and in the highway has been a big challenge as the number of increase in the auto mobiles. So to overcome this problem we use the detection and tracking the vehicles using the traffic surveillance system. We can manage and control the traffic more easily. It is very complicated and a challenging task to identify the vehicle or a moving object in a complex environment with various background. The ratio detected of such algorithms depends on the quality of the foreground mask generated. Therefore this project is to present the detection and tracking the vehicles and the pedestrians in an efficient method which focus on trajectory motion of the vehicles and the pedestrians. In this proposed method, the pixels in the background are preserved which can be cars, bikes, buses, pedestrian, etc., the rest is discarded as the noise. Hence, our proposed method detects the vehicles and the pedestrians as mentioned and discards the rest noise as well in the same time. Here the quality of the generated foreground mask is more to increase the detection ratio. The performance is compared with other standard methods qualitatively and quantitatively.",
+        "title": "Detection of pedestrian and different types of vehicles using image processing",
+        "authors": [
+            "H. Herunde",
+            "A. Singh",
+            "H. Deshpande",
+            "P. Shetty"
+        ],
+        "year": "2020"
+    },
+    {
+        "doi": "10.5194\/isprs-archives-XLIII-B2-2020-659-2020",
+        "links": "https:\/\/www.int-arch-photogramm-remote-sens-spatial-inf-sci.net\/XLIII-B2-2020\/659\/2020\/isprs-archives-XLIII-B2-2020-659-2020.pdf",
+        "abstract": "The management of riverine areas is fundamental due to their great environmental importance. The fast changes that occur in these areas due to river mechanics and human pressure makes it necessary to obtain data with high temporal and spatial resolution. This study proposes a workflow to map riverine species using Unmanned Aerial Vehicle (UAV) imagery. Based on RGB point clouds, our work derived simple geometric and spectral metrics to classify an area of the public hydraulic domain of the river Palancia (Spain) in five different classes: <i>Tamarix gallica<\/i> L. (French tamarisk), <i>Pinus halepensis<\/i> Miller (Aleppo pine), <i>Arundo donax<\/i> L. (giant reed), other riverine species and ground. A total of six Machine Learning (ML) methods were evaluated: Decision Trees, Extra Trees, Multilayer Perceptron, K-Nearest Neighbors, Random Forest and Ridge. The method chosen to carry out the classification was Random Forest, which obtained a mean score cross-validation close to 0.8. Subsequently, an object-based reclassification was done to improve this result, obtaining an overall accuracy of 83.6%, and individually a producer\u2019s accuracy of 73.8% for giant reed, 87.7% for Aleppo pine, 82.8% for French tamarisk, 93.5% for ground and 80.1% for other riverine species. Results were promising, proving the feasibility of using this cost-effective method for periodic monitoring of riverine species. In addition, the proposed workflow is easily transferable to other tasks beyond riverine species classification (e.g., green areas detection, land cover classification) opening new opportunities in the use of UAVs equipped with consumer cameras for environmental applications.",
+        "title": "CLASSIFICATION OF UAV-BASED PHOTOGRAMMETRIC POINT CLOUDS OF RIVERINE SPECIES USING MACHINE LEARNING ALGORITHMS: A CASE STUDY IN THE PALANCIA RIVER, SPAIN",
+        "authors": [
+            "J. P. Carbonell-Rivera",
+            "J. Estornell",
+            "L. A. Ruiz",
+            "J. Torralba",
+            "P. Crespo-Peremarch"
+        ],
+        "year": "2020"
+    }
+]

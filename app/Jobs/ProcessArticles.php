@@ -52,7 +52,7 @@ class ProcessArticles implements ShouldQueue {
                     "articleData" => $extractedData,
                     "pageSize" => $this->pageSize,
                     "page" => $this->page,
-                    "title" => "Page{$this->page}",
+                    "title" => "{$this->query}",
                 ]
             );
         }

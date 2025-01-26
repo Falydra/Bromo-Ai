@@ -15,7 +15,7 @@ export default function SearchPage() {
         try {
             const csrfToken = document.head.querySelector('meta[name="csrf-token"]')?.content;
             const appUrl = import.meta.env.VITE_APP_URL;
-            const url = `${appUrl}/articles/search`;
+            const url = `${appUrl}/test/search`;
             console.log(url)
             const res = await fetch(url, {
                 method: 'POST',
